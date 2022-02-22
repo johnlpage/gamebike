@@ -11,9 +11,9 @@ import logging
 import time
 
 
-DEVICENAME = "InternetThing"
-SERVICEUUID = "90db"
-CHARUUID = "d0c5"
+DEVICENAME = "Handlebar"
+SERVICEUUID = "4a9d"
+CHARUUID = "ba75"
 values = ["ax", "ay", "az", "gx", "gy", "gz", "mx", "my", "mz"]
 scale = [1000, 1000, 1000, 2, 2, 2, 100, 100, 100]
 DIRVAL = "mx"
@@ -57,13 +57,13 @@ class Handlebar(object):
         scanner = Scanner().withDelegate(ScanDelegate())
         self.device = None
         while self.device == None:
-            logging.info("Scanning")
-            devices = scanner.scan(2.0)
-            logging.info("Scan Complete")
-
+            logging.info("Scanning for Handlebar")
+            devices = scanner.scan(5.0)
+ 
             for dev in devices:
                 for (adtype, desc, value) in dev.getScanData():
-                    logging.debug(f"{desc} {value}")
+                    if "ame" in desc:
+                        logging.info(f"{desc} {value}")
                     if DEVICENAME in value:
                         self.device = dev
         logging.info("Found a handlebar")
@@ -119,12 +119,14 @@ class Handlebar(object):
             self.connect_to_handlebar()
 
         try:
-            while self.handlebar.waitForNotifications(0.01):
-                logging.debug("Read sensor")
+            mx=None
+            my=None
+            while self.handlebar.waitForNotifications(0.025):
                 mx = self.data.get("mx", None)
                 my = self.data.get("my", None)
-                if mx != None and my != None:
-                    self.last_direction = math.atan2(mx, my) * 57.29
+            if mx != None and my != None:
+                self.last_direction = math.atan2(mx, my) * 57.29
+                    
 
         except Exception as e:
             logging.error(e)
@@ -149,7 +151,18 @@ class Handlebar(object):
 
     def getSteer(self):
         dir = self.getDirection()
-        return int(dir - self.forwards)
+  
+        if dir:
+            offset = dir - self.forwards
+            if offset > 180:
+                offset =  offset - 360
+
+            #dead zone
+            if -2 <= offset <= 2:
+                return 0
+            return offset
+        else:
+            return 0
 
 
 if __name__ == "__main__":

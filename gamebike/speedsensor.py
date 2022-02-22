@@ -50,13 +50,13 @@ class WheelSpeedSensor(object):
         scanner = Scanner().withDelegate(ScanDelegate())
         self.device = None
         while self.device == None:
-            logging.info("Scanning")
+            logging.info("Scanning for Speed Sensor")
             devices = scanner.scan(2.0)
-            logging.info("Scan Complete")
-
             for dev in devices:
                 for (adtype, desc, value) in dev.getScanData():
-                    logging.debug(f"{desc} {value}")
+                    if "ame" in desc:
+                        logging.info(f"{desc} {value}")
+             
                     if DEVICENAME in value:
                         self.device = dev
         logging.info("Found a wheel speed sensor")
@@ -71,7 +71,7 @@ class WheelSpeedSensor(object):
             logging.info("Tying to connect to speed sensor")
             try:
                 self.speedsensor = Peripheral(self.device)
-                logging.info("Connected")
+                logging.info("Connected to speed sensor")
             except Exception as e:
                 logging.error(e)
                 time.sleep(1)

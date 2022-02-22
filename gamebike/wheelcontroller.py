@@ -14,7 +14,7 @@ import time
 
 VWHEELDEVICE = "/dev/hidg0"
 
-STEERING_SENSITIVITY = 8
+STEERING_SENSITIVITY = 9 
 
 class VirtualWheel(object):
     def __init__(self):
@@ -33,7 +33,7 @@ class VirtualWheel(object):
 and is this running with permissions to write to it?"""
                 + str(e)
             )
-            return false
+            return False
 
     # Lets us write multie changes at one time
 
@@ -48,13 +48,13 @@ and is this running with permissions to write to it?"""
 
         tmp = 128 - (angle*STEERING_SENSITIVITY)
         #Limits
-        if tmp > 255:
-            tmp=255
-        if tmp < 0: 
-            tmp=0
+        if tmp > 250:
+            tmp=250
+        if tmp < 10: 
+            tmp=10
 
         wheel_value = int(tmp * (cmb.STEER_MAX / 256))
-        logging.debug(wheel_value)
+        logging.info(wheel_value)
         self.wheel_data[cmb.WHEEL_WHEEL_HIGHBYTE] = int(wheel_value / 256)
         self.wheel_data[cmb.WHEEL_WHEEL_LOWBYTE] = wheel_value % 256
 
@@ -94,9 +94,11 @@ and is this running with permissions to write to it?"""
                 self.send()
                 time.sleep(0.2)
 
-    def brake(self, input):
-        # TODO - MAP TO HANDBRAKE
-        pass
+    def brake(self):
+        button = cmb.WHEEL_SQUARE;
+        self.wheel_data[button[0]] |= button[1]
+
+       
 
     #A Momentary push of n milliseconds
     def _push_button(self,button,millis):

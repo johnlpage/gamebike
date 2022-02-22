@@ -3,6 +3,7 @@ Python Class to Create a steeing Wheel from
 a Game controller and a Bicycle on a Turbo Trainer
 This is actually a rewrite targeting Forza Horizons 4 but
 With ease of configuration for other games.
+#Adding support for TheCrew back in
 
 It's quite specific for what I want in terms of devices
 mapping and behaviour - not as a generic class
@@ -26,32 +27,57 @@ import logging
 from gamebike.handlebar import Handlebar
 from gamebike.speedsensor import WheelSpeedSensor
 from gamebike.telemetry import Telemetry
+from gamebike.resistance import Resistance
 from gamebike.wheelcontroller import VirtualWheel
+from gamebike.control import Clicker
 
-SPEEDGRACE = 1
+SPEEDGRACE = 1.5
 PEDALRATE = 220
-PEDALNEUTRAL = 128
-WHEEL_MULTIPLIER=2.5
+PEDALNEUTRAL = 135
+WHEEL_MULTIPLIER=2.21
 
 class GameBike(object):
     def __init__(self):
-        logging.basicConfig(level=logging.INFO)
-        self.handlebar = Handlebar()
-        self.speedsensor = WheelSpeedSensor()
-        self.telemetry = Telemetry()
-        self.gamecontroller = VirtualWheel()
-        self.pedalpressure = 128
 
+        logging.basicConfig(level=logging.INFO)
+        
+        logging.info("Controller")
+        self.gamecontroller = VirtualWheel()
+        self.gamecontroller.setup_wheel()
+
+        logging.info("Wheel Speed")
+        self.speedsensor = WheelSpeedSensor()
+        rpm = self.speedsensor.getRPM()
+        logging.info("Telemetry")
+        self.telemetry = Telemetry()
+       
+        logging.info("Resistance")
+        self.resistance = Resistance()
+        self.resistance.set_resistance(0)
+        self.prevresistance = -1
+        self.clicker = Clicker()
+        self.pedalpressure = 128
+        self.braking = False
+        logging.info("Handlebar")
+        self.handlebar = Handlebar()
+        dir = self.handlebar.getSteer()  
 
     def start_controller(self):
         logging.info("Starting ...")
         
         self.handlebar.calibrate()
  
-        self.gamecontroller.setup_wheel()
-
+       
+        self.telemetry.read_telemetry()
+        logging.info("Awaiting Telemetry")
+        while self.telemetry.receiving == False:
+           self.telemetry.read_telemetry()
+        logging.info(f"Game is {self.telemetry.game} - Ready...")
+        self.lastresistance = round(time.time() * 1000)
+        gcount=0
+        gtotal=0
         while True:
-            self.telemetry.read_horizon_telemetry()
+            self.telemetry.read_telemetry()
             dir = self.handlebar.getSteer()
             rpm = self.speedsensor.getRPM()
             
@@ -59,15 +85,59 @@ class GameBike(object):
             gamespeed = self.telemetry.speedms
           
             #Replace this with somethign MUCH smarter this is just ON if we are too slow
-            if gamespeed > self.targetspeed :
+            if gamespeed > self.targetspeed + SPEEDGRACE :
                 self.pedalpressure  = PEDALNEUTRAL
-            elif gamespeed < self.targetspeed - SPEEDGRACE :
+                logging.info("Slower")
+            elif gamespeed >= 0 and gamespeed < self.targetspeed:
+                logging.info("Faster")
                 self.pedalpressure = PEDALRATE
 
-            logging.info(f"GameSpeed:  {gamespeed} Target: {self.targetspeed} Pedal Pressure: {self.pedalpressure} Direction: {dir}, RPM: {rpm}")
-            self.gamecontroller.accelerator(int(self.pedalpressure))
+
+            gradient = self.telemetry.gradient
+            if gradient <0:
+                gradient = 0
+            if gradient > 9:
+                gradient = 9     
+            gcount =gcount+1
+            gtotal=gtotal+gradient
+
+         
+            logging.info(f"GS:{gamespeed} TS:{self.targetspeed} D:{dir} GD:{gradient}")
+
+       
+            #Do not set the resistance as frequently
+            now = round(time.time() * 1000)
+            if now - self.lastresistance > 200:
+                resistance = int(gtotal/gcount)
+                if self.prevresistance != resistance:
+                    logging.info(f"Setting resistance to {resistance}")
+                    self.resistance.set_resistance(int(gtotal/gcount))
+                self.lastresistance = now
+                self.prevresistance = resistance
+                gcount=0
+                gtotal=0
+           
+            control = self.clicker.get_button()
+            if control == 1:
+                exit()
+            if control == 2:
+                self.braking = True
+            if control == 3:
+                self.braking = False
+           
+
+            if self.braking:
+                self.gamecontroller.accelerator(100)
+                self.gamecontroller.brake()
+                logging.info("Brake!!")
+            else :
+                self.gamecontroller.accelerator(int(self.pedalpressure))
+               
+                #Right button brake
+            
             self.gamecontroller.steering(dir)
             self.gamecontroller.send()
+
             time.sleep(0.05)
            
 
