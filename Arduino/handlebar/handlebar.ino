@@ -62,7 +62,7 @@ void setup() {
   BLE.setDeviceName("SteerBar");
   byte data[8] = {'J', 'O', 'H', 'N', 'P','B','A','R'};
 
-  BLE.setManufacturerData(data, 5);
+  BLE.setManufacturerData(data, 8);
   BLE.setAdvertisedService(dataService);        // add the service UUID
   dataService.addCharacteristic(movementChar);  // add the movement characteristic
   BLE.addService(dataService);                  // Add the  service
