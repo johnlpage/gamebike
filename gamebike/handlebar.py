@@ -9,7 +9,7 @@ import struct
 import math
 import logging
 import time
-
+import bluepy.btle as btle
 
 DEVICENAME = "Handlebar"
 SERVICEUUID = "4a9d"
@@ -41,7 +41,12 @@ class ScanDelegate(DefaultDelegate):
         DefaultDelegate.__init__(self)
 
     def handleDiscovery(self, dev, isNewDev, isNewData):
-        pass
+        if isNewDev:
+            # print (f"Discovered device { dev.addr } ")
+            pass
+        elif isNewData:
+            # print (f"Received new data from {dev.addr}")
+            pass
 
 
 class Handlebar(object):
@@ -58,15 +63,16 @@ class Handlebar(object):
         self.device = None
         while self.device == None:
             logging.info("Scanning for Handlebar")
-            devices = scanner.scan(5.0)
- 
+            devices = scanner.scan(3.0, passive=False)
+
             for dev in devices:
-                for (adtype, desc, value) in dev.getScanData():
-                    if "ame" in desc:
-                        logging.info(f"{desc} {value}")
-                    if DEVICENAME in value:
-                        self.device = dev
-        logging.info("Found a handlebar")
+               
+                if dev.getValueText(255) == "4a4f484e50424152":  # JOHNPBAR
+                    logging.info(vars(dev))
+                    self.device = dev
+            time.sleep(1)
+
+        logging.info("Found steeing control (handlebar")
         return
 
     def connect_to_handlebar(self):
@@ -77,11 +83,11 @@ class Handlebar(object):
         while self.handlebar == None:
             logging.info("Tying to connect to handlebar")
             try:
-                self.handlebar = Peripheral(self.device)
+                self.handlebar = Peripheral(self.device, btle.ADDR_TYPE_PUBLIC)
                 logging.info("Connected")
             except Exception as e:
                 logging.error(e)
-                time.sleep(1)
+                time.sleep(5)
 
         try:
             services = self.handlebar.getServices()
@@ -119,14 +125,13 @@ class Handlebar(object):
             self.connect_to_handlebar()
 
         try:
-            mx=None
-            my=None
+            mx = None
+            my = None
             while self.handlebar.waitForNotifications(0.025):
                 mx = self.data.get("mx", None)
                 my = self.data.get("my", None)
             if mx != None and my != None:
                 self.last_direction = math.atan2(mx, my) * 57.29
-                    
 
         except Exception as e:
             logging.error(e)
@@ -151,13 +156,13 @@ class Handlebar(object):
 
     def getSteer(self):
         dir = self.getDirection()
-  
+
         if dir:
             offset = dir - self.forwards
             if offset > 180:
-                offset =  offset - 360
+                offset = offset - 360
 
-            #dead zone
+            # dead zone
             if -2 <= offset <= 2:
                 return 0
             return offset
