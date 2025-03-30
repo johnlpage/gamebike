@@ -18,10 +18,8 @@ import struct
 
 # This is Cycling Power
 SERVICEUUID = "00001818-0000-1000-8000-00805f9b34fb"
-
-
 # This is the power measurement characteristic
-CHARUUID  = '00002a63-0000-1000-8000-00805f9b34fb'
+CHARUUID  = '00002aa6-0000-1000-8000-00805f9b34fb'
 DEVICENAME = "KICKR"
 STALELIMIT = 4
 
@@ -54,6 +52,23 @@ class WheelpowerSensor(object):
         self.prevCumulativeCrankRev = 0
         self.prevCrankTime = 0
         self.prevCrankStaleness = 0
+
+    def set_resistance(self, resistance):
+        if self.device == None:
+            self.find_powersensor()
+
+        if self.device != None and self.powersensor == None:
+            self.connect_to_powersensor()
+
+        try:
+            while self.powersensor.waitForNotifications(0.01):
+                logging.debug("Read sensor")
+                pass
+
+        except Exception as e:
+            logging.error(e)
+            self.powersensor = None
+        pass
 
     def find_powersensor(self):
         scanner = Scanner().withDelegate(ScanDelegate())
@@ -188,6 +203,6 @@ if __name__ == "__main__":
     wsensor = WheelpowerSensor()
 
     while True:
-        Power = wsensor.getPower()
+        Power = wsensor.set_resistance(50);
         logging.info(f"Power Reading: {Power}")
         time.sleep(1)

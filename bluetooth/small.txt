@@ -1,0 +1,1296 @@
+    Feature Bit Value: enabled (0x01)
+    Value: 0200
+    Value: 0100
+    Value: 0100
+ 1249 280.317333 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 24 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: 000501000000000000000000
+    Value: 00060100000000000000000001
+ 1256 280.384930 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 25 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: 00000100000000000000040000
+    Value: 00010100000000000000040000010001
+ 1278 280.461524 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: 0100
+    Value: 0100d6b77b0a
+ 1285 280.522196 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: 0101
+    Value: 0101000344
+ 1293 280.583954 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: 0102
+    Value: 0102010202
+ 1297 280.642678 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: 0103
+    Value: 0103300f4b064db376ce
+ 1321 280.702071 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: 0104
+    Value: 0104bfc98ed3a434d0c6846d2ab7b55ea273
+ 1325 280.781998 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 25 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: 00000100000000000000010002
+ 1328 280.803086 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 25 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: 00000100000000000000160000
+    Value: 00010100000000000000010000820100
+    Value: 00010100000000000000160000030000
+ 1338 280.854224 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 18 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: 030119000000
+    Value: 030200
+    Value: a00000023604a013962d300f4db376ce4b06a00f
+    Value: a00110496e7374696e6374203220536f6c617208
+    Value: a002496e7374696e6374073220536f6c61720103
+    Value: a003673d00
+ 1412 281.744217 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a100
+ 1416 281.759980 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a100000232058813a01302962affffffffffff3f
+ 1417 281.764892 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a10125ffff0a4a6f686e2773205332320773616d
+ 1418 281.771891 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 31 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a10273756e6708534d2d533930314201fe7500
+    Value: a0c0
+    Value: a0c400021413ba130df9ff1f24f2dc5a0efa3736
+    Value: a0c5d901801900
+ 1513 282.852229 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 26 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a183000209058813ba1303514e00
+    Value: a100
+ 1524 282.901030 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a1840002141332800df9ffdffffffffeccdfa50a
+ 1525 282.906039 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 19 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a185172326e200
+    Value: a186000209010480ba13039c1500
+ 1535 282.970489 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a1c0
+ 1544 283.044537 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a1c60002a0032b810101010101028c0101028c01
+ 1545 283.053435 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a1c701826a89014286010a243730303531363132
+ 1546 283.059890 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a1c82d636337332d343930382d613334642d3462
+ 1547 283.065835 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a1c9633731323230366135305201075a04080210
+ 1548 283.070363 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a1ca0162430890881c1a21636f6d2e676f6f676c
+ 1551 283.074696 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a1cb652e616e64726f69642e617070732e6d6573
+ 1552 283.080295 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a1cc736167696e67221a636f6d2e73616d73756e
+ 1553 283.084465 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a1cd672e616e64726f69642e6469616c65726a02
+ 1557 283.090853 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a1ce0802720208077a0208038a01039a0103debb
+ 1558 283.097822 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 15 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a1cf00
+    Value: a280
+    Value: a3c0
+    Value: a407000211010481b31301010101010101010386
+    Value: a408ad00
+    Value: a40900022a03b413010101010102160101021601
+    Value: a40a010f6a144a120801620208019a010208068a
+    Value: a40b01040a020401f64000
+ 1569 283.143110 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a300
+ 1577 283.208042 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a310000211058813b41301010101010101010346
+ 1578 283.218538 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 16 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a3111600
+    Value: a440
+    Value: a480
+ 1593 283.361363 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 23 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a312000206051f8288d900
+ 1596 283.394224 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 25 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: 00000100000000000000020002
+    Value: a4cc0002ca010482a713c40e80040a4649545f54
+    Value: a4cd5950455f3480200b4649545f545950455f33
+    Value: a4ce3280260b4649545f545950455f3338802c0b
+    Value: a4cf4649545f545950455f343480290b4649545f
+    Value: a4d0545950455f343180310b4649545f54595045
+    Value: a4d15f3439fff5144572726f7253687574646f77
+    Value: a4d26e5265706f727473fff8034b5049803a0b46
+    Value: a4d349545f545950455f3538fff707554c464c6f
+ 1605 283.411544 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a440
+ 1607 283.424214 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a500
+    Value: a4d4677380440b4649545f545950455f36388046
+    Value: a4d50b4649545f545950455f373080480b464954
+    Value: a4d65f545950455f3732804a0b4649545f545950
+    Value: a4d7455f3734cc4a00
+    Value: 00010100000000000000020000840100
+ 1627 283.454021 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a600
+ 1634 283.461585 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 22 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: c0000006800501088c00
+ 1637 283.466890 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a6130002100c1a8303060101070101080103d9cb
+ 1642 283.472113 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 15 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a61400
+    Value: c0400007800517080f08010105b87f5c07010101
+    Value: c04103100401010650524f441c00
+    Value: a55800020a010483a213010317dc00
+ 1675 283.529305 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 21 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: c08100038110029100
+ 1681 283.537826 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a640
+ 1685 283.568318 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 25 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a655000208041e840803408900
+    Value: c0820006811101019000
+ 1688 283.588940 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 21 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: c0c200038216029400
+    Value: a59900020a010484a6130103a32c00
+    Value: a59a00020a09bc13ac296f0f822c00
+    Value: a59b00020706b21367593d00
+    Value: a59c00021905b313730401010102050101020501
+    Value: a59d0105aa01023a03bef100
+    Value: a59e00022105b3137404010101020d0101020d01
+    Value: a59f0107aa010a32080802100218022003ca3200
+    Value: a5a000022305b3137504010101020f0101020f01
+    Value: a5a10107aa010c0a0a18022002280230024003bf
+ 1700 283.616886 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a780
+ 1705 283.625934 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a89600020f058813b21302050701020304aad300
+    Value: a5a2e500
+    Value: a5a300021d05b313760401010102090101020901
+    Value: a5a4010882010622040a0204018af100
+    Value: a5a500023105b3137704010101021d0101021d01
+    Value: a5a60120c2011a0a180a16313734323730313233
+    Value: a5a7343738332d65346137313137340b5c00
+    Value: a5a800021e05b3137804010101020a0101020a01
+    Value: a5a9010a6a082a06080112020803268b00
+    Value: a5aa00022205b3137904010101020e0101020e01
+ 1718 283.652977 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a9c0
+ 1720 283.663073 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: aac0
+    Value: a5ab0111520c620a0a080a02656e12024742b481
+    Value: a5ac00
+    Value: a5ad00021a05b3137a0401010102060101020601
+    Value: a5ae01066a041a020803e7b600
+    Value: a5af00021905b3137b0401010102050101020501
+    Value: a5b00105d202023a03fcde00
+    Value: a5b100020803ac130103d1dd00
+    Value: a5b200021a05b3137c0401010102060101020601
+    Value: a5b301066a041a0208036fd000
+ 1732 283.687736 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ac00
+ 1734 283.699480 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad00
+    Value: c0c30007821711010a0501010101010101010101
+    Value: c0c4010101028a00
+    Value: a5c0
+ 1740 283.714861 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad1700021d058813bc1309ac296f0f95eb424201
+ 1741 283.728203 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: c140
+ 1746 283.739579 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 28 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad1801010b904b4b42902660437e8700
+    Value: a600
+ 1749 283.771145 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 22 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: c14300068312010c9c00
+    Value: a640
+ 1753 283.802240 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad19000211058813b3130374040101010101031f
+ 1754 283.816651 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 16 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad1a7500
+    Value: c100
+    Value: a6c0
+ 1772 284.005426 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad1b000211058813b3130373040101010101035e
+ 1773 284.010276 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 16 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad1c9300
+    Value: a740
+ 1781 284.066348 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad1d000211058813b3130375040101010501c91f
+ 1782 284.071232 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 16 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad1e7f00
+    Value: a7c0
+ 1789 284.124096 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad1f000211058813b3130377040101010101035f
+ 1790 284.128002 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 16 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad206000
+    Value: c1050007831302010c9f00
+ 1798 284.161025 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: c184000284020e03a4040309a001060151435253
+ 1799 284.167382 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 17 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: c185029100
+    Value: a840
+ 1804 284.189330 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad21000211058813b3130376040101010501c95f
+ 1805 284.195293 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 16 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad226a00
+    Value: c180
+    Value: c186000984011a6f168409a00106015143525307
+    Value: c187a5099f08020106800201029002f000
+ 1811 284.221944 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 26 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: c206000285040580ca02d8021200
+    Value: a8c0
+ 1820 284.247652 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad23000211058813b3130378040101010101031f
+ 1821 284.255551 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 16 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad242000
+    Value: c1c0
+    Value: c1c80008850105d801029002ca00
+ 1828 284.282516 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 22 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: c24700068614010c9f00
+    Value: a940
+ 1831 284.309038 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad25000211058813b313037a040101010101039e
+ 1832 284.316838 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 16 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad26f900
+    Value: c2090006560801015e00
+    Value: c20a000786150201019100
+ 1839 284.338454 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 22 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: c2880006870501088b00
+ 1841 284.352908 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: c2c0
+    Value: a9c0
+ 1847 284.375296 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad27000211058813b313037b040101010101035f
+ 1848 284.385047 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 16 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad283500
+    Value: c24b0007870517080f08010105b87f5c07010101
+    Value: c24c03100401010650524f441b00
+ 1854 284.398799 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 21 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: c34900035608025e00
+    Value: aa40
+ 1861 284.428175 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 29 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad2900020c058813ac1301010103769700
+    Value: c280
+ 1868 284.457821 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 23 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: c34a000788050205ff7500
+    Value: aab400020804ac130103d04d00
+ 1873 284.492022 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad6a000211058813b313037c040101010101031e
+ 1874 284.498445 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 16 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad6bd300
+    Value: c2cd000888058301050c100101133bcf1ac18d9e
+    Value: c2ce408a9fb0d2d36a6f14fd0b0801010b6ca981
+    Value: c2cf0a90f53e4502040101074d41535403090101
+    Value: c2d00c53616e74616e646572041501011853616e
+    Value: c2d174616e646572204372656469742043617264
+    Value: c2d205020101057b0f0601010104060702010105
+    Value: c2d3e907081001010380c101030ba00101060410
+    Value: c2d410aa0304090d0101010301bc00
+ 1887 284.523313 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: c480
+ 1893 284.537357 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: c540
+    Value: ab00
+ 1897 284.545126 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 22 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: c54b00068905010d8000
+ 1898 284.548862 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad6c000211058813b313037904010101010103de
+ 1899 284.552588 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 16 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad6dec00
+    Value: c31500058905020d028300
+    Value: ab80
+ 1908 284.607894 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 29 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad6e00020c058813ac1301020103770700
+ 1909 284.615443 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: c580
+    Value: abc0
+ 1917 284.671652 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad6f000220052c857804010101020c0101020c01
+ 1918 284.679413 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 31 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad70010a6a0a32080801120408051001b41b00
+    Value: ac75000211010485b4130378040101010101032e
+    Value: ac765400
+ 1927 284.732322 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: adf10002b4052c86760401010102a0010102a001
+ 1928 284.736639 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: adf2010982019c012a9901080412440896121e53
+ 1929 284.740589 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: adf36f7272792c2063616ee28099742074616c6b
+ 1930 284.747238 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: adf4207269676874206e6f772e121449276c6c20
+ 1933 284.753122 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: adf563616c6c20796f75206c617465722e120a4f
+ 1934 284.757267 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: adf66e206d792077617921124f0801120b4e6f20
+ 1935 284.764316 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: adf770726f626c656d21120c49276d2064726976
+ 1940 284.768975 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: adf8696e672e120a4f4b2c2057696c6c636f1203
+ 1941 284.775302 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: adf959657312024e6f120a4f6e206d7920776179
+    Value: ad00
+ 1944 284.780757 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: adfa21120f43616e27742074616c6b206e6f772e
+ 1946 284.787475 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 17 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: adfb80b200
+    Value: ae40
+    Value: ae80
+    Value: af37000211010486b413037604010101010103ab
+    Value: af38dc00
+ 1955 284.862077 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ae7c00024a052c897c0401010102360101023601
+ 1963 284.877944 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ae7d01226a3422320801122e0a0b08c6e396fa04
+ 1964 284.882609 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ae7e10ef88ff2f159a19784318b2d48b92042501
+ 1965 284.892351 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ae7f04c8422d0104c84230024d010480bf550101
+ 1967 284.897600 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 19 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ae40010361b600
+    Value: af40
+    Value: a000
+    Value: a079000211010489b413037c040101010101033f
+    Value: a07ab700
+    Value: a07b00074601b3137d0401010103320101033201
+ 1978 284.984710 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ae8100024a052c887a0401010102360101023601
+    Value: a07c01ff12af022aac020a5768747470733a2f2f
+    Value: a07d6170692e6763732e6761726d696e2e636f6d
+    Value: a07e2f776561746865722f76312f63616c696272
+    Value: a07f6174696f6e2f616c74696d657465723f6c61
+    Value: a040743d363634393833373739266c6f6e3d2d35
+    Value: a0413033323430323418012a1e0a19582d476172
+    Value: a0426d696e2d4669726d776172652d5665727369
+    Value: a0436f6e1201312a190a14582d4761726d696e2d
+    Value: a0444170702d56657273696f6e1201312a270a17
+    Value: a045582d4761726d696e2d53572d506172742d4e
+    Value: a046756d626572120c3030362d42333838382d30
+    Value: a047302a1e0a10582d4761726d696e2d556e6974
+    Value: a0482d4944120a333436333838353634352a0d0a
+    Value: a0490641636365707412032a2f2a2a3c0a0d4175
+ 1999 285.000049 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: af8201226a3422320801122e0a0b08c6e396fa04
+ 2009 285.016206 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a28310ef88ff2f159a19784318b2d48b92042501
+    Value: a04a74686f7237697a6174696f6e122b42656172
+    Value: a04b6572203673696a673770312d723068752d68
+ 2012 285.020521 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a28404c8422d0104c84230024d010480bf550101
+    Value: a04c6234722d327536342d633533736a6b687273
+    Value: a04d617a75020100
+    Value: a080
+ 2017 285.026325 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 19 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a3050103e74500
+ 2018 285.036496 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a380
+    Value: a100
+    Value: a18e000211010488b413037a0401010101010342
+    Value: a18f5e00
+ 2029 285.097669 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a400
+ 2030 285.102926 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a406000211058813b313037d04010101010103df
+ 2031 285.105882 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 16 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a4071f00
+    Value: a200
+ 2044 285.150211 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a408000219042b8a010101010102050101020501
+ 2047 285.154553 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 24 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a4090105aa01020a03cd7700
+    Value: a29000021101048ab313020101010101010103a2
+    Value: a291ba00
+ 2053 285.205343 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a48a00021b042b8b020101010102070101020701
+ 2054 285.209406 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 26 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a48b0107aa010412021803f02200
+    Value: a31200021101048bb3130202010101010101031f
+    Value: a3136c00
+ 2063 285.272839 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a50c00021a052c8c790401010102060101020601
+ 2064 285.279379 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 25 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a50d010952046a02080128be00
+    Value: a39400021101048cb413037904010101010103f3
+    Value: a3958400
+ 2074 285.325529 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a58e00022b04318706020206302e300302010403
+ 2075 285.329814 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a58f0201040302020404020303300c02010c302c
+ 2076 285.334763 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 24 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a590302e302c302e3012e100
+    Value: a456000209010487b913036d6100
+ 2086 285.388588 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a5d100020f03218d021101034e360104020ba600
+    Value: a49700020a01048da91301037c3900
+    Value: a49800021703aa13034e3601010405011b030227
+    Value: a4990303270404c08700
+ 2093 285.459742 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 28 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a69200020b058813aa13010103650700
+    Value: a4c0
+ 2097 285.507174 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a69300020f03218e021101034f36010402c66900
+    Value: a51a00020a01048ea9130103383900
+ 2108 285.579003 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a6d400020f03218f0211010352360104027bae00
+    Value: a55b00020a01048fa913010305f900
+ 2113 285.626720 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a7150007e1052c907d0401010103cd050103cd05
+ 2114 285.630733 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a71601ff12ca0b32c70b086410c8011ab0017b22
+ 2115 285.634354 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a71774656d7065726174757265223a7b2276616c
+ 2116 285.638202 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a7187565223a31322e3133383732373534343434
+ 2117 285.641701 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a719343434332c22756e6365727461696e747922
+ 2118 285.645679 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a71a3a3130307d2c227072657373757265223a7b
+ 2119 285.649632 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a71b2276616c7565223a3130313233322e393937
+ 2123 285.654984 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a71c383939393533382c22756e6365727461696e
+ 2125 285.659330 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a71d7479223a3130307d2c22666f726563617374
+ 2126 285.662904 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a71e54696d65223a313734323734373534342c22
+ 2128 285.666773 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a71f666f726563617374497373756554696d6522
+ 2130 285.670869 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a7203a313734323733313230307d2a3f0a0d4361
+ 2131 285.675300 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a7216368652d436f6e74726f6c122e6e6f2d6361
+    Value: a680
+    Value: a6c0
+ 2135 285.680991 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a7226368652c206e6f2d73746f72652c206d6178
+ 2137 285.684832 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a7232d6167653d302c206d7573742d726576616c
+ 2139 285.690604 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a72469646174ff652a1a0a0f43462d4361636865
+    Value: a800
+    Value: a880
+    Value: a940
+ 2155 285.751381 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a7252d537461747573120744594e414d49432a1e
+ 2156 285.759465 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a7260a0643462d52617912143932346635333135
+ 2157 285.766597 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a72763663363633230342d4455422a180a0a436f
+ 2161 285.775208 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a7286e6e656374696f6e120a6b6565702d616c69
+ 2162 285.782948 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a72976652a200a0c436f6e74656e742d54797065
+ 2163 285.789496 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a72a12106170706c69636174696f6e2f6a736f6e
+ 2164 285.796036 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a72b2a250a0444617465121d53756e2c20323320
+    Value: a9c0
+ 2168 285.801744 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a72c4d617220323032352031363a33323a323420
+ 2171 285.808106 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a72d474d542a0c0a07457870697265731201302a
+ 2172 285.812851 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a72e460a034e454c123f7b22737563636573735f
+ 2173 285.819259 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a72f6672616374696f6e223a302e30312c227265
+ 2174 285.826787 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a730706f72745f746f223a2263662d6e656c222c
+    Value: ab00
+ 2179 285.834336 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a731226d61785f616765223a3630343830307d2a
+ 2180 285.839675 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a732120a0650726167ff6d6112086e6f2d636163
+ 2183 285.845429 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a73368652a8f020a095265706f72742d546f1281
+ 2184 285.851483 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a734027b22656e64706f696e7473223a5b7b2275
+    Value: ac40
+    Value: ad40
+ 2194 285.901369 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a735726c223a2268747470733a5c2f5c2f612e6e
+ 2195 285.910040 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a736656c2e636c6f7564666c6172652e636f6d5c
+ 2196 285.918470 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a7372f7265706f72745c2f76343f733d43253246
+ 2198 285.927419 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a738594c7248627725324678777a744c70766a73
+ 2199 285.934920 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a73933736d45573759556d6c7754446e6865396e
+ 2200 285.943451 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a73a56697049705979375431717a78494e305572
+ 2201 285.950521 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a73b322532422532464b657969446e4451533463
+    Value: adc0
+ 2206 285.958241 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a73c4853484862774c6b646f4f453645356a7945
+ 2210 285.966073 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a73d6369644a324151397930306c4f5832326963
+ 2213 285.975984 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a73e7a39446c4443554a6558666a485a56614863
+    Value: aec0
+ 2217 285.984928 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a73f253246545068552532464155455238412533
+ 2218 285.992683 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a70044253344227d5d2c2267ff726f7570223a22
+ 2219 286.000139 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a70163662d6e656c222c226d61785f616765223a
+ 2220 286.007188 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a7023630343830307d2a140a0653657276657212
+    Value: afc0
+ 2224 286.013459 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a7030a636c6f7564666c6172652aa7010a0a5365
+ 2226 286.023427 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a704742d436f6f6b69651298015f636675766964
+    Value: a080
+    Value: a140
+ 2231 286.084702 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a7053d724166315530466a486d6f797165525844
+ 2232 286.091459 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a706666c325436384855744b2e533059717a4d4b
+ 2233 286.098396 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a707414e71664d4738632d313734323734373534
+ 2235 286.107413 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a708343138332d302e302e312e312d3630343830
+ 2236 286.115435 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a709303030303b20706174683d2f3b20646f6d61
+ 2237 286.123292 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a70a696e3d2e6170692e6763732e6761726d696e
+    Value: a1c0
+ 2240 286.132786 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a70b2e636f6d3b20487474704f6e6c793b205365
+ 2243 286.140916 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a70c637572653b2053616d65536974653d4e6f6e
+ 2244 286.148702 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a70d652a4a0a195374726963742d5472616e7370
+    Value: a2c0
+ 2251 286.160462 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a70e6f72742d536563757269747912ff2d6d6178
+ 2252 286.167263 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a70f2d6167653d31363030303030303b20696e63
+ 2253 286.172925 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a7106c756465537562446f6d61696e733b207072
+ 2254 286.179394 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a711656c6f61643b2a1c0a115472616e73666572
+ 2255 286.186851 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a7122d456e636f64696e6712076368756e6b6564
+    Value: a380
+ 2259 286.194690 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a7132a170a0456617279120f4163636570742d45
+ 2262 286.200899 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a7146e636f64696e672a2a0a19582d416e64726f
+    Value: a4c0
+    Value: a540
+ 2270 286.265210 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a71569642d52656365697665642d4d696c6c6973
+ 2271 286.273744 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a716120d313734323734373534333836352a280a
+ 2273 286.281432 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a71719582d416e64726f69642d526573706f6e73
+ 2274 286.287627 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a718652d536f75726365120b4e4554574f524b20
+ 2275 286.293530 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a7193230302a270a1b582d416e64726f69642d53
+ 2276 286.300087 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a71a656c65637465642d50726f746f636f6c1208
+ 2277 286.308221 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a71b687474702f312e312a260a15582d416e6472
+    Value: a580
+ 2282 286.317707 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a71c6f69642d53656e742d4d696c6c697312da0d
+ 2288 286.327931 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a71d313734323734373534333431392a210a1678
+ 2289 286.334030 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a71e2d636f6e74656e742d747970652d6f707469
+    Value: a6c0
+ 2291 286.340343 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a71f6f6e7312076e6f736e6966662a170a0f782d
+ 2293 286.350124 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a7206672616d652d6f7074696f6e73120444454e
+ 2294 286.356970 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a721592a2d0a0c782d726571756573742d696412
+ 2295 286.363641 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a7221d2d31716e77373131706d323732642d2d31
+    Value: a7c0
+ 2297 286.370204 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a7236f6d636a656f6f70776d63362a390a11782d
+ 2300 286.377557 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a724766361702d726571756573742d6964122436
+    Value: a8c0
+    Value: a940
+ 2308 286.449061 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a725333231326264372d633461652d343063372d
+ 2311 286.460672 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a726366434622d3965383339343238633738312a
+ 2313 286.475918 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a727210a10782d7873732d70726f74656374696f
+ 2314 286.485498 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a7286e120d313b206d6f64653d626c6f636bbb24
+    Value: a980
+ 2318 286.494598 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 15 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a72900
+    Value: aa40
+    Value: aa80
+    Value: aa9c000211010490b413037d0401010101010323
+    Value: aa9d9800
+ 2328 286.572079 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a7aa00020f03219102110103583601040283cf00
+    Value: aade00020a010491a9130103adfb00
+ 2335 286.637067 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a7c0
+ 2336 286.649356 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a7eb00020f0321920211010359360103024e0100
+    Value: ab1f00020a010492a9130103e9fb00
+ 2349 286.724979 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a800
+ 2350 286.735291 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a82c00020f032193021101035a360104025bc500
+    Value: ab6000020a010493a9130103d43b00
+ 2356 286.801413 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a86d00020f032194021101035b36010402d7df00
+    Value: aba100020a010494a913010361fb00
+ 2362 286.876311 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a8ae00020f032195021901035e360104024bbc00
+    Value: abe200020a010495a91301035c3b00
+ 2371 286.968348 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a8c0
+ 2376 286.982692 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a8ef00020f032196021901036236010402ebb600
+    Value: ac2300020a010496a9130103183b00
+ 2386 287.063982 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a900
+ 2387 287.074790 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a93000020f052197020101035f360101034fbd00
+    Value: ac6400020a010497a913010325fb00
+ 2401 287.138062 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a9710002780423986c03fe260101034e36010102
+ 2402 287.144835 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a9720e11636f6d2e74706c696e6b2e696f74050f
+ 2403 287.150909 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a97312323032353033323354313234333133010f
+ 2407 287.159041 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a97411506572736f6e2044657465637465640201
+ 2408 287.166218 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a9750303272a2246726f6e7420646f6f72223a20
+ 2411 287.171699 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a976506572736f6e207761732064657465637465
+ 2413 287.177722 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 29 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a977642061742031320402053436a8b000
+    Value: acc0
+    Value: adc0
+    Value: ae2500020c010498ab130101010345ee00
+    Value: ae2600021703aa13034f3601010405011b030227
+    Value: ae270303270404011700
+ 2427 287.260328 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: aa3800020f032199061904196336010402a18f00
+    Value: ae6800020a010499a91301034c3a00
+ 2439 287.316783 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 28 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: aa7900020b058813aa13010103650700
+    Value: ae80
+ 2445 287.375702 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: aa7a00027804239a6c03d0070101034f36010102
+ 2446 287.381180 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: aa7b0e11636f6d2e74706c696e6b2e696f74050f
+ 2447 287.386655 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: aa7c12323032353033323354313234333333010f
+ 2450 287.394153 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: aa7d114d6f74696f6e2044657465637465640201
+ 2451 287.398054 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: aa7e0303272a226472697665776179223a204d6f
+ 2452 287.404606 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: aa7f74696f6e2077617320646574656374656420
+ 2453 287.409601 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 29 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: aa4061742031323a340402053434a47400
+    Value: af00
+    Value: a040
+    Value: a06900020c01049aab1301010103662e00
+    Value: a06a00021703aa1303523601010405011b030227
+    Value: a06b0303270404c84e00
+ 2467 287.474028 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 28 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ab0100020b058813aa13010103650700
+    Value: a080
+ 2475 287.531412 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ab0200027804239b6c03c4790101035236010102
+ 2477 287.540504 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ab030e11636f6d2e74706c696e6b2e696f74050f
+ 2478 287.546152 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ab0412323032353033323354313333303338010f
+ 2479 287.551167 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ab0511506572736f6e2044657465637465640201
+ 2480 287.557229 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ab060303272a2246726f6e7420646f6f72223a20
+ 2481 287.563232 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ab07506572736f6e207761732064657465637465
+    Value: a0c0
+ 2483 287.570221 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 29 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ab0864206174203133040205343633fc00
+    Value: a200
+    Value: a26c00020c01049bab130101010376ee00
+    Value: a26d00021703aa1303583601010405011b030227
+    Value: a26e03032704044ee900
+ 2494 287.654040 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 28 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: abc900020b058813aa13010103650700
+    Value: a280
+ 2505 287.713004 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: abca00027904239c6d0373f70101035836010102
+ 2507 287.719318 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: abcb1c1f6f72672e6e6174697665736372697074
+ 2511 287.726480 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: abcc2e4c696272654c696e6b5570050f12323032
+ 2512 287.733349 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: abcd353033323354313532333035010a0c436172
+ 2513 287.740317 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: abce6f6c2050616765020103031f22476c75636f
+ 2514 287.744823 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: abcf73652052656164696e673a20362e36206d6d
+    Value: a2c0
+ 2517 287.750620 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 30 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: abd06f6c2f4c20e286920402053239e5c000
+    Value: a400
+    Value: a46f00020c01049cab1301010101022e00
+    Value: a47000021703aa1303593601010405011b030227
+    Value: a47103032704048f7900
+ 2529 287.835985 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 28 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ac9100020b058813aa13010103650700
+    Value: a480
+ 2540 287.930119 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ac9200027804239d6c0377940101035936010102
+ 2541 287.936823 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ac930e11636f6d2e74706c696e6b2e696f74050f
+ 2542 287.944948 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ac9412323032353033323354313533353036010f
+ 2543 287.953686 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ac95114d6f74696f6e2044657465637465640201
+ 2546 287.964967 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ac960303272a226472697665776179223a204d6f
+ 2547 287.974609 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ac9774696f6e2077617320646574656374656420
+ 2548 287.982962 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 29 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ac9861742031353a330402053434180300
+    Value: a580
+    Value: a67200020c01049dab130101010310ee00
+    Value: a67300021703aa13035a3601010405011b030227
+    Value: a6740303270404cf8800
+ 2558 288.043556 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 28 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad5900020b058813aa13010103650700
+    Value: a680
+ 2564 288.108091 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad5a00027804239e6c03b39d0101035a36010102
+ 2565 288.115138 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad5b0e11636f6d2e74706c696e6b2e696f74050f
+ 2566 288.123551 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad5c12323032353033323354313533363038010f
+ 2567 288.131674 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad5d114d6f74696f6e2044657465637465640201
+ 2574 288.141483 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad5e0303272a226472697665776179223a204d6f
+ 2577 288.148999 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad5f74696f6e2077617320646574656374656420
+ 2578 288.155213 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 29 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ad6061742031353a33040205343460ff00
+    Value: a780
+    Value: a87500020c01049eab130101010323ee00
+    Value: a87600021703aa13035b3601010405011b030227
+    Value: a87703032704040e1800
+ 2591 288.228583 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 28 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ae2100020b058813aa13010103650700
+    Value: a880
+ 2601 288.329545 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ae2200027804239f6c03a5120101035b36010102
+ 2605 288.340656 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ae230e11636f6d2e74706c696e6b2e696f74050f
+ 2612 288.356457 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ae2412323032353033323354313533363230010f
+ 2620 288.369257 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ae2511506572736f6e2044657465637465640201
+    Value: a900
+ 2625 288.381651 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ae260303272a2246726f6e7420646f6f72223a20
+ 2626 288.391680 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ae27506572736f6e207761732064657465637465
+ 2627 288.400310 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 29 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: ae28642061742031350402053436847300
+    Value: a980
+    Value: aa7800020c01049fab1301010103332e00
+    Value: aa7900021703aa13035e3601010405011b030227
+    Value: aa7a0303270404cd4b00
+ 2640 288.459017 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 28 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: aee900020b058813aa13010103650700
+    Value: aa80
+ 2646 288.533697 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: aeea00028e04238082030a7d0101035e36010102
+ 2650 288.547792 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: aeeb171a636f6d2e6669746269742e4669746269
+ 2654 288.562715 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: aeec744d6f62696c65050f123230323530333233
+ 2655 288.573094 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: aeed54313630383039011b1d5475726e206f6e20
+ 2658 288.590958 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: aeee426c7565746f6f746820746f2073796e6320
+    Value: ab00
+ 2661 288.603026 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: aeef7902010303272a4c6f6f6b73206c696b6520
+ 2662 288.608247 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: aef0426c7565746f6f7468206973206f66662e20
+ 2663 288.614858 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: aef15475726e206f6e20426c0403063132331b59
+    Value: ab80
+ 2666 288.621405 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 15 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: aef200
+    Value: abc0
+    Value: acfb00020c010480ab1301010103ddef00
+    Value: acfc00021703aa1303623601010405011b030227
+    Value: acfd0303270404dc5a00
+ 2683 288.730067 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 28 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: afb300020b058813aa13010103650700
+    Value: ad00
+ 2691 288.787189 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: afb400028e0423818203dc5c0101036236010102
+ 2692 288.794121 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: afb5171a636f6d2e6669746269742e4669746269
+ 2694 288.800288 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: afb6744d6f62696c65050f123230323530333233
+ 2695 288.805180 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: afb754313632373333011b1d5475726e206f6e20
+ 2696 288.811942 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: afb8426c7565746f6f746820746f2073796e6320
+ 2697 288.817260 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: afb97902010303272a4c6f6f6b73206c696b6520
+ 2698 288.821962 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: afba426c7565746f6f7468206973206f66662e20
+    Value: ad80
+ 2700 288.828586 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: afbb5475726e206f6e20426c0403063132336e2e
+ 2703 288.833449 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 15 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: afbc00
+    Value: aec0
+    Value: af7e00020c010481ab1301010103cd2f00
+    Value: af7f00021703aa1303633601010405011b030227
+    Value: af4003032704041dca00
+ 2712 288.918215 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a000
+ 2713 288.934402 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 28 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a07d00020b058813aa13010103650700
+    Value: af80
+ 2721 289.002484 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a07e0002700423826403df9d0101036336010102
+ 2724 289.011088 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a07f1417636f6d2e6c696e6b6564696e2e616e64
+ 2725 289.018482 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a040726f6964050f123230323530333233543136
+ 2726 289.024484 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a04133313133010b0d41465245454e2042414e4f
+ 2727 289.027827 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a042020103031d2073656e7420796f7520612063
+ 2728 289.032287 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a0436f6e6e656374696f6e207265717565737404
+ 2729 289.036805 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 21 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a04402053239772300
+    Value: afc0
+    Value: a100
+    Value: a14100020c010482ab1301010103fe2f00
+ 2735 289.082819 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a080
+ 2987 293.559469 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a08500020f052183020101035f360101030ffd00
+    Value: a18200020a010483a913010315f800
+ 3016 293.622562 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a0c0
+ 3642 302.056896 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a0c600020f052184020101035f36010103be2700
+    Value: a1c300020a010484a9130103a03800
+ 3651 302.142706 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a100
+ 4368 312.213044 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a10700020f052185020101035f36010103efe200
+    Value: a20400020a010485a91301039df800
+ 4383 312.664788 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a140
+    Value: c3160006570801025c00
+ 4578 314.371040 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 21 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: c5cc00035708025f00
+    Value: c340
+ 4799 322.478760 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a14800020f052186020101035f360101031fed00
+    Value: a24500020a010486a9130103d9f800
+ 4814 322.917967 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a180
+ 5202 332.677475 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a18900020f052187020101035f360101034e2800
+    Value: a28600020a010487a9130103e43800
+ 5214 333.085458 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a1c0
+    Value: 0100ffff
+    Value: 0200
+    Value: ac2f0a4581824be591e02992e6b40ebb
+    Value: 00
+    Value: 0100
+    Value: 80
+    Value: 000000000000000000000000000000000000
+    Value: 01
+    Value: 80
+    Value: 8100000808
+    Value: 8100000808
+    Value: 0045000097c06b0000ff11a6e8a9fe0003a9fe0002163416340083027216feff00000000…
+    Value: 004500010500000000ff1166e6a9fe0002a9fe00031634163400f1723916fefd00000000…
+    Value: 40
+    Value: 01450000f8c06c0000ff11a686a9fe0003a9fe00021634163400e4e14e16fefd00000000…
+    Value: 40
+    Value: 014500008700010000ff116763a9fe0002a9fe00031634163400735ae314fefd00000000…
+    Value: 024500007900020000ff116770a9fe0002a9fe0003163416340065c68117fefd00010000…
+    Value: 034500007900030000ff11676fa9fe0002a9fe0003163416340065bb8117fefd00010000…
+    Value: 0245000099c06d0000ff11a6e4a9fe0003a9fe0002163416340085de3517fefd00010000…
+    Value: 0345000099c06e0000ff11a6e3a9fe0003a9fe00021634163400853f1817fefd00010000…
+    Value: 0445000079c06f0000ff11a702a9fe0003a9fe00021634163400651fec17fefd00010000…
+    Value: 0545000099c0700000ff11a6e1a9fe0003a9fe0002163416340085faa617fefd00010000…
+    Value: 0645000099c0710000ff11a6e0a9fe0003a9fe0002163416340085a34417fefd00010000…
+    Value: 0745000069c0720000ff11a70fa9fe0003a9fe0002163416340055266e17fefd00010000…
+    Value: 031b48011b4801
+    Value: 0845000079c0730000ff11a6fea9fe0003a9fe00021634163400653eba17fefd00010000…
+    Value: 044500006900040000ff11677ea9fe0002a9fe00031634163400557cb517fefd00010000…
+    Value: 054500006900050000ff11677da9fe0002a9fe0003163416340055de5217fefd00010000…
+    Value: 064500006900060000ff11677ca9fe0002a9fe0003163416340055fde417fefd00010000…
+    Value: 074500007900070000ff11676ba9fe0002a9fe0003163416340065e1d017fefd00010000…
+    Value: 084500007900080000ff11676aa9fe0002a9fe00031634163400655b9517fefd00010000…
+    Value: 45
+    Value: 45
+    Value: 094500006900090000ff116779a9fe0002a9fe0003163416340055a10817fefd00010000…
+    Value: 0945000079c0740000ff11a6fda9fe0003a9fe0002163416340065464417fefd00010000…
+    Value: 0a45000479000b0000ff116367a9fe0002a9fe0003163416340465749b17fefd00010000…
+    Value: 0bd397606cace9734fac3e72d5df8c54646f0f90039ffe1d4f02872c5d920d1566bb551e…
+    Value: 4a
+    Value: 0cb77fdd1b29b4181a86c8d3c8c035552c0c9dd761a8dcedb47a0af6dc155c59aa9566fe…
+    Value: 00
+    Value: 0a45000079c0760000ff11a6fba9fe0003a9fe0002163416340065cbab17fefd00010000…
+    Value: 0d45000209000c0000ff1165d6a9fe0002a9fe00031634163401f5a26717fefd00010000…
+    Value: 0edad150c0378f7f943941b19fa4
+    Value: 4a
+ 6132 342.822018 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a1ca00020f052188020101035f360101037e1800
+    Value: 0b45000079c0770000ff11a6faa9fe0003a9fe0002163416340065e21417fefd00010000…
+    Value: a2c700020a010488a9130103b03900
+ 6157 342.996061 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a200
+    Value: 4e
+    Value: 0f45000079000d0000ff116765a9fe0002a9fe000316341634006530f617fefd00010000…
+    Value: 0c45000069c0780000ff11a709a9fe0003a9fe000216341634005572e917fefd00010000…
+    Value: 4b
+    Value: 10450000c9000e0000ff116714a9fe0002a9fe00031634163400b5084217fefd00010000…
+    Value: 0d45000079c0790000ff11a6f8a9fe0003a9fe0002163416340065019f17fefd00010000…
+    Value: 50
+    Value: 4d
+    Value: 01
+    Value: 1145000079000f0000ff116763a9fe0002a9fe0003163416340065aa7e17fefd00010000…
+    Value: 0e45000069c07a0000ff11a707a9fe0003a9fe0002163416340055512017fefd00010000…
+    Value: 12450000e900100000ff1166f2a9fe0002a9fe00031634163400d522f617fefd00010000…
+    Value: 0f45000079c07b0000ff11a6f6a9fe0003a9fe0002163416340065704417fefd00010000…
+    Value: 134500007900110000ff116761a9fe0002a9fe00031634163400659bfa17fefd00010000…
+    Value: 1045000069c07c0000ff11a705a9fe0003a9fe0002163416340055068717fefd00010000…
+    Value: 144500010900120000ff1166d0a9fe0002a9fe00031634163400f5ad7e17fefd00010000…
+    Value: 1145000079c07d0000ff11a6f4a9fe0003a9fe0002163416340065d90a17fefd00010000…
+    Value: 154500007900130000ff11675fa9fe0002a9fe000316341634006572c717fefd00010000…
+    Value: 1245000069c07e0000ff11a703a9fe0003a9fe0002163416340055838417fefd00010000…
+    Value: 55
+    Value: 52
+    Value: 16450000f900140000ff1166dea9fe0002a9fe00031634163400e5086d17fefd00010000…
+    Value: 1345000079c07f0000ff11a6f2a9fe0003a9fe00021634163400656c8c17fefd00010000…
+    Value: 174500007900150000ff11675da9fe0002a9fe0003163416340065d6ee17fefd00010000…
+    Value: 1445000069c0800000ff11a701a9fe0003a9fe0002163416340055b65117fefd00010000…
+    Value: 184500018900160000ff11664ca9fe0002a9fe000316341634017505fa17fefd00010000…
+    Value: 1545000079c0810000ff11a6f0a9fe0003a9fe0002163416340065259417fefd00010000…
+    Value: 194500007900170000ff11675ba9fe0002a9fe0003163416340065ce1f17fefd00010000…
+    Value: 1645000069c0820000ff11a6ffa9fe0003a9fe000216341634005586a517fefd00010000…
+    Value: 1a4500016900180000ff11666aa9fe0002a9fe0003163416340155440717fefd00010000…
+    Value: 00
+    Value: 1745000079c0830000ff11a6eea9fe0003a9fe0002163416340065607117fefd00010000…
+    Value: 5a
+    Value: 57
+    Value: 1b4500007900190000ff116759a9fe0002a9fe00031634163400651b9617fefd00010000…
+    Value: 1845000069c0840000ff11a6fda9fe0003a9fe0002163416340055bc5b17fefd00010000…
+    Value: 1c450001b9001a0000ff116618a9fe0002a9fe00031634163401a568c917fefd00010000…
+    Value: 1945000079c0850000ff11a6eca9fe0003a9fe0002163416340065b48417fefd00010000…
+    Value: 1d45000079001b0000ff116757a9fe0002a9fe0003163416340065d62517fefd00010000…
+    Value: 1a45000069c0860000ff11a6fba9fe0003a9fe00021634163400557df617fefd00010000…
+    Value: 1e45000479001c0000ff116356a9fe0002a9fe00031634163404652ed517fefd00010000…
+    Value: 1f1dfb9b6b2fe13b91c608eb19fb372255e7316861abed7e0cd89b8657458e7a6ed1b63f…
+    Value: 00eb3743eebfd69453637def5145924e394e795e5eb2bddaba6a0e6d5acb27efeadb8bef…
+    Value: 5f
+    Value: 1b45000079c0870000ff11a6eaa9fe0003a9fe0002163416340065652317fefd00010000…
+    Value: 0145000129001d0000ff1166a5a9fe0002a9fe0003163416340115b11717fefd00010000…
+    Value: 1c45000079c0880000ff11a6e9a9fe0003a9fe00021634163400659ae817fefd00010000…
+    Value: 5c
+    Value: 0245000079001e0000ff116754a9fe0002a9fe0003163416340065295b17fefd00010000…
+    Value: 1d45000069c0890000ff11a6f8a9fe0003a9fe0002163416340055931917fefd00010000…
+    Value: 0345000119001f0000ff1166b3a9fe0002a9fe0003163416340105138c17fefd00010000…
+    Value: 1e45000079c08a0000ff11a6e7a9fe0003a9fe0002163416340065b8eb17fefd00010000…
+    Value: 044500007900200000ff116752a9fe0002a9fe00031634163400659e4c17fefd00010000…
+    Value: 1f45000069c08b0000ff11a6f6a9fe0003a9fe0002163416340055490d17fefd00010000…
+    Value: 44
+    Value: 054500012900210000ff1166a1a9fe0002a9fe0003163416340115266217fefd00010000…
+    Value: 0045000079c08c0000ff11a6e5a9fe0003a9fe0002163416340065c7f417fefd00010000…
+    Value: 45
+    Value: 40
+    Value: 01
+    Value: 01
+    Value: 030000
+    Value: 030001
+ 9351 406.201883 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a20b00022b04318906020206302e300302010403
+ 9352 406.210744 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a20c0201040302020404020303300c02010c302c
+ 9353 406.226061 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 24 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a20d302e302c302e30f35800
+    Value: a388000209010489b913036f8900
+ 9362 406.437344 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a240
+    Value: 030002
+    Value: 030003
+    Value: 030004
+    Value: a38900028005b3137e04010101026c0101026c01
+    Value: a38a0137126a0a680a2868747470733a2f2f6273
+    Value: a38b67772e64646e732e6e65743a32343630312f
+    Value: a38c6c6173742d72656164696e6710011a2eabcd
+    Value: a38dabcd0101020f0e0d436f6e74656e742d5479
+    Value: a38e706505da7ada7a0101030f0b010103010301
+    Value: a38f010102010101070128808001300438014005
+    Value: a3904801979f00
+13201 496.626609 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a440
+13202 496.681489 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a44e000211058813b313037e040101010101039f
+13203 496.688505 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 16 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a44f0a00
+    Value: a400
+13257 497.132253 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a450000735012c8a7e0401010103210101032101
+13260 497.140893 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a4510112129e02129b02086410c8011a90021009
+13261 497.150508 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a452479e010203050607090a0b0d0f111315202a
+13262 497.158746 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a4532f3032333435373a3d40414344464748494c
+13263 497.167397 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a4544d505455565d61626364656768696c6d6e6f
+13266 497.177125 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a45570717273747577797a8996a5abaccccddaff
+13269 497.187261 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a456412212b00402189ed42a47bbf14a30590b97
+13270 497.198134 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a4574bc96a4b072532114f2413cba382a1ac2597
+13271 497.206450 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a4580769b4648c5a299ceed6cace72386862a896
+    Value: a440
+13280 497.236984 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a4590872786a5a96164e5262745a4266465c485a
+13281 497.238541 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a45a6e3a62960a181d130110aeb2b6babe2e0a60
+13282 497.239595 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a45b70446876960c5041605c5e96144af66658ec
+13283 497.240346 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a45c7070525c3c136c5b70376e6e56693f1c5768
+13284 497.242965 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a45d705a4c66607270058a7aaa97296012b01306
+13285 497.248714 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a45eb001bc971ac2012002b003c833ce97d2b13b
+13286 497.256696 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a45fd80154c84d0434848688c851c8c7b1c1380c
+    Value: a580
+    Value: a640
+    Value: a780
+    Value: a800
+13306 497.441187 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a4600e9b8d80e47a085ce223de0c723fe2013802
+13307 497.452472 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 20 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a461289e02b78200
+    Value: a89100021101048ab413037e04010101010103ba
+    Value: a8926a00
+13321 497.616818 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a4c0
+15570 521.937497 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a4e200022b04318b06020206302e300302010403
+15575 521.951056 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a4e30201040302020404020303300c02010c302c
+15576 521.959964 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 24 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a4e4302e302c302e30d28b00
+    Value: a95300020901048bb913036e3100
+15593 522.082463 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a500
+    Value: ac2f0a4581824be591e02992e6b40ebb
+    Value: 00
+    Value: 0100
+    Value: 80
+    Value: 000000000000000000000000000000000000
+    Value: 01
+    Value: 80
+    Value: 8100000808
+    Value: 8100000808
+    Value: 0045000097c0910000ff11a6c2a9fe0003a9fe000216341634008334d116feff00000000…
+    Value: 004500010500000000ff1166e6a9fe0002a9fe00031634163400f190e016fefd00000000…
+    Value: 40
+    Value: 01450000f8c0920000ff11a660a9fe0003a9fe00021634163400e48d9716fefd00000000…
+    Value: 40
+    Value: 014500008700010000ff116763a9fe0002a9fe0003163416340073a54214fefd00000000…
+    Value: 031b48011b4801
+    Value: 0245000099c0930000ff11a6bea9fe0003a9fe0002163416340085ba8117fefd00010000…
+    Value: 0345000099c0940000ff11a6bda9fe0003a9fe00021634163400853ee217fefd00010000…
+    Value: 0445000079c0950000ff11a6dca9fe0003a9fe0002163416340065183f17fefd00010000…
+    Value: 0545000099c0960000ff11a6bba9fe0003a9fe0002163416340085e80017fefd00010000…
+    Value: 0645000099c0970000ff11a6baa9fe0003a9fe000216341634008547b917fefd00010000…
+    Value: 024500007900020000ff116770a9fe0002a9fe0003163416340065d80517fefd00010000…
+    Value: 034500007900030000ff11676fa9fe0002a9fe0003163416340065e06c17fefd00010000…
+    Value: 044500006900040000ff11677ea9fe0002a9fe0003163416340055725817fefd00010000…
+    Value: 054500006900050000ff11677da9fe0002a9fe0003163416340055891e17fefd00010000…
+    Value: 064500006900060000ff11677ca9fe0002a9fe0003163416340055926117fefd00010000…
+    Value: 0745000079c0980000ff11a6d9a9fe0003a9fe0002163416340065fe8617fefd00010000…
+    Value: 074500006900070000ff11677ba9fe0002a9fe0003163416340055436e17fefd00010000…
+    Value: 0845000079c0990000ff11a6d8a9fe0003a9fe000216341634006588d217fefd00010000…
+    Value: 45
+    Value: 45
+    Value: 084500006900080000ff11677aa9fe0002a9fe00031634163400550a5817fefd00010000…
+    Value: 094500007900090000ff116769a9fe0002a9fe000316341634006551e017fefd00010000…
+    Value: 0945000079c09a0000ff11a6d7a9fe0003a9fe0002163416340065873317fefd00010000…
+    Value: 49
+    Value: 49
+    Value: 0a45000079000a0000ff116768a9fe0002a9fe0003163416340065c70017fefd00010000…
+    Value: 0a45000069c09b0000ff11a6e6a9fe0003a9fe0002163416340055287317fefd00010000…
+    Value: 0b450000c9000b0000ff116717a9fe0002a9fe00031634163400b50d7117fefd00010000…
+    Value: 0b45000079c09c0000ff11a6d5a9fe0003a9fe00021634163400656fd617fefd00010000…
+    Value: 4b
+    Value: 4b
+    Value: 0c45000079000c0000ff116766a9fe0002a9fe0003163416340065b28217fefd00010000…
+    Value: 0c45000069c09d0000ff11a6e4a9fe0003a9fe0002163416340055b47a17fefd00010000…
+    Value: 0d450000e9000d0000ff1166f5a9fe0002a9fe00031634163400d518a617fefd00010000…
+    Value: 0d45000079c09e0000ff11a6d3a9fe0003a9fe0002163416340065626a17fefd00010000…
+    Value: 0e45000079000e0000ff116764a9fe0002a9fe0003163416340065536017fefd00010000…
+    Value: 0e45000069c09f0000ff11a6e2a9fe0003a9fe000216341634005521ad17fefd00010000…
+    Value: 0f450000f9000f0000ff1166e3a9fe0002a9fe00031634163400e56e7b17fefd00010000…
+    Value: 0f45000079c0a00000ff11a6d1a9fe0003a9fe0002163416340065db3117fefd00010000…
+    Value: 104500007900100000ff116762a9fe0002a9fe0003163416340065cd9f17fefd00010000…
+    Value: 1045000069c0a10000ff11a6e0a9fe0003a9fe00021634163400555cb117fefd00010000…
+    Value: 50
+    Value: 50
+    Value: 114500010900110000ff1166d1a9fe0002a9fe00031634163400f5966c17fefd00010000…
+    Value: 1145000079c0a20000ff11a6cfa9fe0003a9fe0002163416340065b71117fefd00010000…
+    Value: 124500007900120000ff116760a9fe0002a9fe00031634163400659e4617fefd00010000…
+    Value: 1245000069c0a30000ff11a6dea9fe0003a9fe0002163416340055694417fefd00010000…
+    Value: 13450001b900130000ff11661fa9fe0002a9fe00031634163401a555ca17fefd00010000…
+    Value: 1345000079c0a40000ff11a6cda9fe0003a9fe0002163416340065700917fefd00010000…
+    Value: 144500007900140000ff11675ea9fe0002a9fe0003163416340065cc2917fefd00010000…
+    Value: 1445000069c0a50000ff11a6dca9fe0003a9fe0002163416340055816617fefd00010000…
+    Value: 154500018900150000ff11664da9fe0002a9fe000316341634017538cf17fefd00010000…
+    Value: 00
+    Value: 1545000079c0a60000ff11a6cba9fe0003a9fe00021634163400653e9417fefd00010000…
+    Value: 55
+    Value: 55
+    Value: 164500007900160000ff11675ca9fe0002a9fe0003163416340065bdda17fefd00010000…
+    Value: 1645000069c0a70000ff11a6daa9fe0003a9fe00021634163400554b3f17fefd00010000…
+    Value: 174500016900170000ff11666ba9fe0002a9fe0003163416340155e3be17fefd00010000…
+    Value: 1745000079c0a80000ff11a6c9a9fe0003a9fe0002163416340065149b17fefd00010000…
+    Value: 184500007900180000ff11675aa9fe0002a9fe0003163416340065ec6817fefd00010000…
+    Value: 1845000069c0a90000ff11a6d8a9fe0003a9fe0002163416340055f84a17fefd00010000…
+    Value: 194500047900190000ff116359a9fe0002a9fe000316341634046508fe17fefd00010000…
+    Value: 1ac5e5d31a92e88c7f65ec12a80ed58d96fe642110b86574e20de3a491376b769ebba974…
+    Value: 1b65b81c01bfb6d2bdd8460dcdbe577b1aa1e993eba63f8e99b0633b96fd343f2105b561…
+    Value: 5a
+    Value: 1945000079c0aa0000ff11a6c7a9fe0003a9fe00021634163400658ac617fefd00010000…
+    Value: 1c45000129001a0000ff1166a8a9fe0002a9fe000316341634011527e417fefd00010000…
+    Value: 1a45000079c0ab0000ff11a6c6a9fe0003a9fe00021634163400653a7117fefd00010000…
+    Value: 5a
+    Value: 1d45000079001b0000ff116757a9fe0002a9fe0003163416340065362317fefd00010000…
+    Value: 1b45000069c0ac0000ff11a6d5a9fe0003a9fe00021634163400551a8e17fefd00010000…
+    Value: 1e45000119001c0000ff1166b6a9fe0002a9fe0003163416340105312b17fefd00010000…
+    Value: 1c45000079c0ad0000ff11a6c4a9fe0003a9fe000216341634006560a617fefd00010000…
+    Value: 1f45000079001d0000ff116755a9fe0002a9fe0003163416340065cf4517fefd00010000…
+    Value: 1d45000069c0ae0000ff11a6d3a9fe0003a9fe0002163416340055302b17fefd00010000…
+    Value: 5f
+    Value: 0045000129001e0000ff1166a4a9fe0002a9fe0003163416340115e33f17fefd00010000…
+    Value: 1e45000079c0af0000ff11a6c2a9fe0003a9fe000216341634006558bd17fefd00010000…
+    Value: 40
+    Value: 5e
+    Value: 01
+    Value: 01
+    Value: 030005
+    Value: 030006
+    Value: 030007
+    Value: ac2f0a4581824be591e02992e6b40ebb
+    Value: 00
+    Value: 0100
+    Value: 80
+    Value: 000000000000000000000000000000000000
+    Value: 01
+    Value: 80
+    Value: 8100000808
+    Value: 8100000808
+    Value: 0045000097c0b60000ff11a69da9fe0003a9fe0002163416340083592716feff00000000…
+    Value: 004500010500000000ff1166e6a9fe0002a9fe00031634163400f1c48c16fefd00000000…
+    Value: 40
+    Value: 01450000f8c0b70000ff11a63ba9fe0003a9fe00021634163400e4c08916fefd00000000…
+    Value: 40
+    Value: 014500008700010000ff116763a9fe0002a9fe0003163416340073791a14fefd00000000…
+    Value: 031b48011b4801
+    Value: 0245000099c0b80000ff11a699a9fe0003a9fe0002163416340085111017fefd00010000…
+    Value: 0345000099c0b90000ff11a698a9fe0003a9fe0002163416340085205717fefd00010000…
+    Value: 0445000079c0ba0000ff11a6b7a9fe0003a9fe0002163416340065ef6917fefd00010000…
+    Value: 0545000099c0bb0000ff11a696a9fe0003a9fe0002163416340085a9cb17fefd00010000…
+    Value: 024500007900020000ff116770a9fe0002a9fe0003163416340065c86517fefd00010000…
+    Value: 0645000099c0bc0000ff11a695a9fe0003a9fe000216341634008502f617fefd00010000…
+    Value: 034500007900030000ff11676fa9fe0002a9fe0003163416340065789d17fefd00010000…
+    Value: 044500006900040000ff11677ea9fe0002a9fe0003163416340055f02d17fefd00010000…
+    Value: 054500006900050000ff11677da9fe0002a9fe000316341634005560b917fefd00010000…
+    Value: 064500006900060000ff11677ca9fe0002a9fe0003163416340055b53a17fefd00010000…
+    Value: 0745000079c0bd0000ff11a6b4a9fe0003a9fe00021634163400656ada17fefd00010000…
+    Value: 074500006900070000ff11677ba9fe0002a9fe0003163416340055639817fefd00010000…
+    Value: 45
+    Value: 0845000079c0be0000ff11a6b3a9fe0003a9fe0002163416340065ee8017fefd00010000…
+    Value: 45
+    Value: 084500007900080000ff11676aa9fe0002a9fe0003163416340065871c17fefd00010000…
+    Value: 094500006900090000ff116779a9fe0002a9fe0003163416340055cf5e17fefd00010000…
+    Value: 0945000079c0bf0000ff11a6b2a9fe0003a9fe0002163416340065107717fefd00010000…
+    Value: 49
+    Value: 49
+    Value: 01
+    Value: 030008
+    Value: 030009
+    Value: 03000a
+    Value: 03000b
+22136 700.918321 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a52500020f03218c02120103643601040203b000
+    Value: a99400020a01048ca913010341f900
+22148 701.293290 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a540
+    Value: a99500021703aa1303643601010405011b030227
+22150 701.369666 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a580
+    Value: a99603032704045ff800
+22157 701.459560 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 28 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a5e600020b058813aa13010103650700
+    Value: a9c0
+22162 702.025511 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a5e700027b04238d6f032ebf0101036436010102
+22163 702.033586 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a5e812156262632e6d6f62696c652e6e6577732e
+22164 702.040207 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a5e9756b050f1232303235303332335431363339
+22165 702.045973 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a5ea3138010d0f427265616b696e67204e657773
+22166 702.057499 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a5eb02010303272a43616e616461e2809973206e
+22169 702.080312 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a5ec657720504d204d61726b204361726e657920
+22170 702.089183 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a5ed63616c6c7320736e610403063130337b8500
+    Value: ab00
+    Value: ab9700020c01048dab1301010103012f00
+    Value: ab9800021903aa13036436010301960302960b03
+    Value: ab99bc027f1405010442cf00
+22176 702.284621 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a600
+22177 702.300783 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 28 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a6ae00020b058813aa13010103650700
+    Value: abc0
+22180 702.452572 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a6af0002b004238ea40357270101036436010301
+22181 702.461294 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a6b00d0f427265616b696e67204e657773020103
+22182 702.469310 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a6b103696c43616e616461e2809973206e657720
+22183 702.474585 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a6b2504d204d61726b204361726e65792063616c
+22184 702.478706 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a6b36c7320736e617020656c656374696f6e2c20
+22185 702.483777 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a6b473656e64696e6720636f756e74727920746f
+22186 702.488539 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a6b52074686520706f6c6c73206f6e2032382041
+22187 702.492955 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a6b67072696c202d20666f6c6c6f77206c697665
+22190 702.522157 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 32 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a6b77f170d02620c074469736d697373630d0942
+22192 702.524264 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 31 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a6b86c6f636b2041707004030631303323be00
+    Value: ad00
+    Value: adc0
+    Value: ae5a00020c01048eab1301010103322f00
+22200 702.718421 SamsungE_11:e7:78 (John's S22) → f5:7c:ad:e6:7d:c9 () ATT 14 Sent Write Command, Handle: 0x0025 (Generic Access Profile: Central Address Resolution: Unknown)
+    Value: a6c0
+    Value: 03000c
