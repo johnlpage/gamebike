@@ -1,6 +1,5 @@
-# Created by https://github.com/milador/XAC-Virtual-Joystick
 #!/bin/bash
-
+# Created by https://github.com/milador/XAC-Virtual-Joystick
 #sleep 10
 
 # Create xac_joystick gadget

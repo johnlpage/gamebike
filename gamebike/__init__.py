@@ -27,7 +27,7 @@ import logging
 from gamebike.handlebar import Handlebar
 from gamebike.speedsensor import WheelSpeedSensor
 from gamebike.telemetry import Telemetry
-from gamebike.resistance import Resistance
+from gamebike.kickr_resistance import KickrResistance
 from gamebike.wheelcontroller import VirtualWheel
 from gamebike.control import Clicker
 
@@ -41,18 +41,19 @@ class GameBike(object):
 
         logging.basicConfig(level=logging.INFO)
         
-        logging.info("Controller")
+        logging.info("Configuring Virtual Game Controller Device")
         self.gamecontroller = VirtualWheel()
         self.gamecontroller.setup_wheel()
 
         logging.info("Wheel Speed")
         self.speedsensor = WheelSpeedSensor()
         rpm = self.speedsensor.getRPM()
+        
         logging.info("Telemetry")
         self.telemetry = Telemetry()
        
         logging.info("Resistance")
-        self.resistance = Resistance()
+        self.resistance = KickrResistance()
         self.resistance.set_resistance(0)
         self.prevresistance = -1
         self.clicker = Clicker()

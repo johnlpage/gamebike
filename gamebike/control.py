@@ -15,8 +15,10 @@ CLICKER_DID=0xad03
 
 class Clicker(object):
     def __init__(self):
+      
         logging.basicConfig(level=logging.INFO)
         try:
+            
             self.clicker  = hid.device()
             logging.info("Opening Clicker")
             self.clicker.open(CLICKER_VID, CLICKER_DID)

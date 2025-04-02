@@ -81,12 +81,12 @@ class ReadCharacteristicDelegate(DefaultDelegate):
 
 
 
-class WheelpowerSensor(object):
+class KickrResistance(object):
     def __init__(self):
         logging.basicConfig(level=logging.INFO)
         self.scanner = None
         self.device = None
-        self.powersensor = None
+        self.resistance_control = None
         self.Power = 0
 
     def set_resistance(self, resistance):
@@ -94,16 +94,21 @@ class WheelpowerSensor(object):
         if self.device == None:
             self.find_powersensor()
 
-        
-        if self.device != None and self.powersensor == None:
+        normal=int(resistance * 16383)
+        if self.device != None and self.resistance_control == None:
             self.connect_to_powersensor()
-        try:
-            logging.info(f"Setting resistance to {resistance}")
-            self.powersensor.writeCharacteristic(37, struct.pack("<H", resistance))
-        except Exception as e:
-            logging.error(e)
-            self.powersensor = None
-        pass
+
+        logging.info(f"Setting resistance to {resistance}")
+
+        packed_bytes = struct.pack('<BH', SETRESISTANCEMODE, normal)
+        isSet = False
+        while not isSet:
+            try:
+                response = self.controlcharacteristic.write(packed_bytes,withResponse=True)
+                isSet = True
+            except Exception as e:
+                print(e)   
+       
 
     def find_powersensor(self):
         scanner = Scanner()
@@ -128,49 +133,35 @@ class WheelpowerSensor(object):
         logging.info("Found.")
 
         logging.info("Creatng Peripheral.")
-        while self.powersensor == None:
+        while self.resistance_control == None:
             try:
-                self.powersensor = Peripheral(self.device)
+                self.resistance_control = Peripheral(self.device)
                 logging.info("Connected.")
-                self.powersensor.withDelegate(ReadCharacteristicDelegate())
+                self.resistance_control.withDelegate(ReadCharacteristicDelegate())
             except Exception as e:
                 time.sleep(1)
 
-        service = self.powersensor.getServiceByUUID(SERVICEUUID);
+        service = self.resistance_control.getServiceByUUID(SERVICEUUID);
         self.controlcharacteristic = service.getCharacteristics(CHARUUID)[0]
         logging.info(f"Control characteristic: {self.controlcharacteristic.propertiesToString()} {self.controlcharacteristic.getHandle()}")    
-        return
+
+        unlocked = False
+        logging.info("Unlocking")
+        while not unlocked:
+            try:
+                unlock = self.controlcharacteristic.write(b"\x20\xee\xfc",withResponse=True)
+                unlocked = True
+            except Exception as e:
+                    print(e)    
 
     
 
 if __name__ == "__main__":
 
     print("Testing KICKR RESISTANCE class standalone")
-    wsensor = WheelpowerSensor()
-    wsensor.find_powersensor()
-    unlocked = False
-    logging.info("Unlocking")
-    while not unlocked:
-        try:
-            unlock = wsensor.controlcharacteristic.write(b"\x20\xee\xfc",withResponse=True)
-            unlocked = True
-        except Exception as e:
-                print(e)    
-        
+    kickr = KickrResistance()
+    kickr.find_powersensor()
+
     normal = 12000
 
-    while True:
-   
-      
-        packed_bytes = struct.pack('<BH', SETRESISTANCEMODE, normal)
-        isSet = False
-        while not isSet:
-            try:
-                response = wsensor.controlcharacteristic.write(packed_bytes,withResponse=True)
-                print(f"Response: {response}")
-                isSet = True
-            except Exception as e:
-                print(e)    
-        print(f"Setting resistance to {normal} {packed_bytes.hex()} { wsensor.controlcharacteristic.getHandle()}")
-        text = input("Enter Resistance ")
-        normal = int(text)
+  

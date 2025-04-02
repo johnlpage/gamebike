@@ -26,15 +26,6 @@ class NotifyDelegate(DefaultDelegate):
         logging.debug(data)
         self.parent_speedsensor.calcRPMFromData(data)
 
-
-class ScanDelegate(DefaultDelegate):
-    def __init__(self):
-        DefaultDelegate.__init__(self)
-
-    def handleDiscovery(self, dev, isNewDev, isNewData):
-        pass
-
-
 class WheelSpeedSensor(object):
     def __init__(self):
         logging.basicConfig(level=logging.INFO)
@@ -47,42 +38,38 @@ class WheelSpeedSensor(object):
         self.prevCrankStaleness = 0
 
     def find_speedsensor(self):
-        scanner = Scanner().withDelegate(ScanDelegate())
+        scanner = Scanner()
+        logging.info("Scanning for Speed Sensor")
         self.device = None
-        while self.device == None:
-            logging.info("Scanning for Speed Sensor")
+        count = 5
+        while self.device == None and count > 0:
+            count = count - 1
             devices = scanner.scan(2.0)
             for dev in devices:
-                for (adtype, desc, value) in dev.getScanData():
-                    if "ame" in desc:
-                        logging.info(f"{desc} {value}")
-             
+                for (adtype, desc, value) in dev.getScanData(): 
                     if DEVICENAME in value:
                         self.device = dev
-        logging.info("Found a wheel speed sensor")
-        return
+                        logging.info("Found speed sensor")
+                        return True
+        logging.info("Sensor not found - will retry")
+        return False
 
     def connect_to_speedsensor(self):
         if self.device == None:
-            return
+            if self.find_speedsensor() == False:
+                return False
 
-        self.speedsensor = None
-        while self.speedsensor == None:
-            logging.info("Tying to connect to speed sensor")
+        count = 5
+        logging.info("Tying to connect to speed sensor")
+        while self.speedsensor == None and count > 0:
+            count = count - 1
             try:
                 self.speedsensor = Peripheral(self.device)
                 logging.info("Connected to speed sensor")
             except Exception as e:
-                logging.error(e)
                 time.sleep(1)
-
-        try:
-            services = self.speedsensor.getServices()
-        except Exception as e:
-            logging.error(e)
-            self.speedsensor = None
-            return
-            # Bluetooth LE breaks a lot :-(
+        if(count == 0):
+            return False
 
         self.speedsensor.setDelegate(NotifyDelegate(self))
         try:
@@ -94,30 +81,27 @@ class WheelSpeedSensor(object):
             # This wasn't obvious - you need to write to enable notification
             self.speedsensor.writeCharacteristic(configHandle, b"\x01\x00")
             logging.info("Subscribed to rotation notifications")
-            return
+            return True
         except Exception as e:
-            logging.error("speedsensor is missing required services?!")
             logging.error(e)
             try:
                 self.speedsensor.disconnect()
             except:
                 logging.error("Was unable to disconnect!")
             self.speedsensor = None
+            return False
 
     def getRPM(self):
-        if self.device == None:
-            self.find_speedsensor()
-
-        if self.device != None and self.speedsensor == None:
-            self.connect_to_speedsensor()
+        if self.device != None or self.speedsensor == None:
+            if self.connect_to_speedsensor() == False:
+                return 0.0
 
         try:
             while self.speedsensor.waitForNotifications(0.01):
-                logging.debug("Read sensor")
+                logging.info("Read sensor")
                 pass
-
         except Exception as e:
-            logging.error(e)
+            logging.info(e)
             self.speedsensor = None
 
         return self.rpm

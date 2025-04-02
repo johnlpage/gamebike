@@ -30,3 +30,13 @@ sudo pip install  -r requirements.txt
 
 
 ```
+
+```
+Software Configuration:
+Enable Gadget Mode:
+Edit /boot/config.txt: Add the following line to enable the DWC2 (Direct USB Controller) driver: dtoverlay=dwc2.
+Edit /boot/cmdline.txt: Add the following line to load the necessary modules: modules-load=dwc2,g_hid,g_gamepad.
+Reboot: Reboot the Raspberry Pi for the changes to take effect.
+Install Necessary Packages:
+Run the following command to install the udev package: sudo apt-get install udev.
+```
