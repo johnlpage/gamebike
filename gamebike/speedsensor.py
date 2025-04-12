@@ -9,6 +9,7 @@ import logging
 import time
 import struct
 
+
 # This is standard Rotation sensor bluetooth UUID
 SERVICEUUID = "00001816-0000-1000-8000-00805f9b34fb"
 # This is the standard notify characteristic UUID
@@ -37,74 +38,8 @@ class WheelSpeedSensor(object):
         self.prevCrankTime = 0
         self.prevCrankStaleness = 0
 
-    def find_speedsensor(self):
-        scanner = Scanner()
-        logging.info("Scanning for Speed Sensor")
-        self.device = None
-        count = 5
-        while self.device == None and count > 0:
-            count = count - 1
-            devices = scanner.scan(2.0)
-            for dev in devices:
-                for (adtype, desc, value) in dev.getScanData(): 
-                    if DEVICENAME in value:
-                        self.device = dev
-                        logging.info("Found speed sensor")
-                        return True
-        logging.info("Sensor not found - will retry")
-        return False
 
-    def connect_to_speedsensor(self):
-        if self.device == None:
-            if self.find_speedsensor() == False:
-                return False
 
-        count = 5
-        logging.info("Tying to connect to speed sensor")
-        while self.speedsensor == None and count > 0:
-            count = count - 1
-            try:
-                self.speedsensor = Peripheral(self.device)
-                logging.info("Connected to speed sensor")
-            except Exception as e:
-                time.sleep(1)
-        if(count == 0):
-            return False
-
-        self.speedsensor.setDelegate(NotifyDelegate(self))
-        try:
-            speedsensorService = self.speedsensor.getServiceByUUID(SERVICEUUID)
-            motionCharacteristics = speedsensorService.getCharacteristics(
-                forUUID=CHARUUID
-            )
-            configHandle = motionCharacteristics[0].getHandle() + 1
-            # This wasn't obvious - you need to write to enable notification
-            self.speedsensor.writeCharacteristic(configHandle, b"\x01\x00")
-            logging.info("Subscribed to rotation notifications")
-            return True
-        except Exception as e:
-            logging.error(e)
-            try:
-                self.speedsensor.disconnect()
-            except:
-                logging.error("Was unable to disconnect!")
-            self.speedsensor = None
-            return False
-
-    def getRPM(self):
-        if self.device != None or self.speedsensor == None:
-            if self.connect_to_speedsensor() == False:
-                return 0.0
-
-        try:
-            while self.speedsensor.waitForNotifications(0.01):
-                logging.info("Read sensor")
-                pass
-        except Exception as e:
-            logging.info(e)
-            self.speedsensor = None
-
-        return self.rpm
 
     def calcRPMFromData(self, data):
         cumulativeCrankRev = int.from_bytes(data[1:3], "little")
@@ -140,12 +75,96 @@ class WheelSpeedSensor(object):
         self.prevCrankTime = lastCrankTime
 
 
-if __name__ == "__main__":
+    def find_speedsensor(self):
+        scanner = Scanner()
+        logging.debug("Scanning for Speed Sensor")
+        self.device = None
+        count = 2
+        try:
+            while self.device == None and count > 0:
+                count = count - 1
+                devices = scanner.scan(1.0)
+                for dev in devices:
+                    for (adtype, desc, value) in dev.getScanData(): 
+                        if DEVICENAME in value:
+                            self.device = dev
+                            logging.debug("Found speed sensor device")
+                            return True
+        except Exception as e:
+            logging.debug(e)
+            time.sleep(0.5)
+            self.device = None
+        logging.info("Bicycle speed sensor not found - will retry")
 
+        return False
+
+    def connect_to_speedsensor(self):
+
+        if self.device == None:
+            return
+
+        count = 5
+        logging.debug("Tying to connect to speed sensor")
+        while self.speedsensor == None and count > 0:
+            count = count - 1
+            try:
+                self.speedsensor = Peripheral(self.device)
+            except Exception as e:
+                pass
+        if(count == 0):
+
+            return False
+
+        self.speedsensor.setDelegate(NotifyDelegate(self))
+        try:
+            speedsensorService = self.speedsensor.getServiceByUUID(SERVICEUUID)
+            motionCharacteristics = speedsensorService.getCharacteristics(
+                forUUID=CHARUUID
+            )
+            configHandle = motionCharacteristics[0].getHandle() + 1
+            # This wasn't obvious - you need to write to enable notification
+            self.speedsensor.writeCharacteristic(configHandle, b"\x01\x00")
+            logging.info("Bicycle wheel speed sensor ready")
+            return True
+        except Exception as e:
+            logging.error(e)
+            try:
+                self.speedsensor.disconnect()
+            except:
+                logging.error("Was unable to disconnect!")
+            self.speedsensor = None
+
+            return False
+
+    def getRPM(self):
+
+        if self.device == None:
+           self.find_speedsensor()
+           return 0.0
+
+        if self.speedsensor == None:
+            self.connect_to_speedsensor()
+            return 0.0
+        
+
+        try:
+            while self.speedsensor.waitForNotifications(0.01):
+                logging.debug("Read sensor")
+                pass
+        except Exception as e:
+            logging.info(e)
+            self.speedsensor = None
+
+        return self.rpm
+
+
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.DEBUG, format='%(filename)s:%(lineno)d -  %(threadName)s %(message)s')
     print("Testing wheel speed sensor class standalone")
     wsensor = WheelSpeedSensor()
 
     while True:
         rpm = wsensor.getRPM()
-        logging.info(f"RPM: {rpm}")
+        if rpm != None:
+            logging.info(f"RPM: {rpm}")
         time.sleep(1)

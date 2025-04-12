@@ -11,6 +11,8 @@ import struct
 from pprint import pprint
 from struct import unpack
 
+
+
 """
 
 jlp@steampi:~/gamebike/gamebike $ sudo gatttool -b "f2:e5:54:98:07:ac" -t random  --char-write-req --handle=0x2f --value=32EEFC 
@@ -80,7 +82,6 @@ class ReadCharacteristicDelegate(DefaultDelegate):
 
 
 
-
 class KickrResistance(object):
     def __init__(self):
         logging.basicConfig(level=logging.INFO)
@@ -88,80 +89,105 @@ class KickrResistance(object):
         self.device = None
         self.resistance_control = None
         self.Power = 0
+        self.ready = False
 
     def set_resistance(self, resistance):
 
-        if self.device == None:
-            self.find_powersensor()
-
+        if resistance > 1.0:
+            resistance = 1.0
+        if resistance < 0.0:
+            resistance = 0.0
         normal=int(resistance * 16383)
-        if self.device != None and self.resistance_control == None:
-            self.connect_to_powersensor()
+
+        if self.device == None or self.resistance_control == None or not self.ready:
+            self.find_powersensor()
+            return
 
         logging.info(f"Setting resistance to {resistance}")
 
         packed_bytes = struct.pack('<BH', SETRESISTANCEMODE, normal)
         isSet = False
-        while not isSet:
+        count = 5
+        while count > 0 and not isSet:
             try:
+                count = count - 1
                 response = self.controlcharacteristic.write(packed_bytes,withResponse=True)
                 isSet = True
             except Exception as e:
-                print(e)   
+                time.sleep(0.2)
+                logging.debug(e)
+
+        if not isSet:
+            logging.info("KICKR not responding, retrying")
+            self.resistance_control = None
+            self.ready = False
+            return isSet
        
 
     def find_powersensor(self):
-        scanner = Scanner()
+
+        scanner =  Scanner()
         self.device = None
-      
-        while self.device == None:
-            logging.info("Scanning for KICKR SNAP")
+        logging.debug("Scanning for KICKR SNAP")
+        count = 2
+        while count > 0 and self.device == None:
             try:
+                count = count - 1
                 devices = scanner.scan(2.0)
                 for dev in devices:
-                    
                     for adtype, desc, value in dev.getScanData():   
-                        if "ame" in desc:
-                            logging.info(f"Found {desc} {value}")
                         if DEVICENAME in value:
+                            logging.debug("Found KICKR SNAP device")
                             self.device = dev
-                            logging.info(vars(dev))
             except Exception as e:
-                logging.info(e)
-                time.sleep(1)
+                logging.debug(e)
+                pass
 
-        logging.info("Found.")
+        if self.device == None:
+            logging.info("KICKR SNAP not found, will retry")
+            return
 
-        logging.info("Creatng Peripheral.")
-        while self.resistance_control == None:
+        logging.debug("Connecting to KICKR SNAP.")
+        count = 5
+        while count > 0 and self.resistance_control == None:
+            count=count -1
             try:
                 self.resistance_control = Peripheral(self.device)
-                logging.info("Connected.")
-                self.resistance_control.withDelegate(ReadCharacteristicDelegate())
+                logging.debug("Connected to KICKR SNAP.")
+                # self.resistance_control.withDelegate(ReadCharacteristicDelegate())
             except Exception as e:
-                time.sleep(1)
+                time.sleep(0.2)
 
+        if  self.resistance_control == None:
+            return
+    
         service = self.resistance_control.getServiceByUUID(SERVICEUUID);
         self.controlcharacteristic = service.getCharacteristics(CHARUUID)[0]
-        logging.info(f"Control characteristic: {self.controlcharacteristic.propertiesToString()} {self.controlcharacteristic.getHandle()}")    
-
-        unlocked = False
-        logging.info("Unlocking")
-        while not unlocked:
+       
+        logging.debug("Unlocking Control of resistance.")
+        count = 5
+        while count > 0 and not self.ready:
             try:
-                unlock = self.controlcharacteristic.write(b"\x20\xee\xfc",withResponse=True)
-                unlocked = True
+                self.controlcharacteristic.write(b"\x20\xee\xfc",withResponse=True)
+                self.ready = True
+                logging.info("KICKR Resistance READY")
             except Exception as e:
-                    print(e)    
+                   time.sleep(0.2)
+        
+        if not self.ready:
+            self.resistance_control = None
+
 
     
 
 if __name__ == "__main__":
-
+    logging.basicConfig(level=logging.DEBUG, format='%(filename)s:%(lineno)d -  %(threadName)s %(message)s')
     print("Testing KICKR RESISTANCE class standalone")
     kickr = KickrResistance()
-    kickr.find_powersensor()
+    
+    while True:
+        kickr.set_resistance(0.05)
+        time.sleep(1)
 
-    normal = 12000
 
-  
+    

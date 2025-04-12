@@ -8,9 +8,9 @@ mkdir -p xac_joystick
 cd xac_joystick
 
 # Define USB specification
-echo 0x0460 > idVendor # Linux Foundation
-echo 0xc290 > idProduct # Multifunction Composite Joystick Gadget
-echo 1322 > bcdDevice # v1.0.0
+echo 0x046d > idVendor # Logitech
+echo 0xc294 > idProduct # Driging force GT
+echo 0x0100 > bcdDevice # v1.0.0
 echo 0x0200 > bcdUSB # USB2
 echo 0x00 > bDeviceClass
 echo 0x00 > bDeviceSubClass
@@ -19,19 +19,21 @@ echo 0x00 > bDeviceProtocol
 # Perform localization
 mkdir -p strings/0x409
 
-echo "0000000000" > strings/0x409/serialnumber
-echo "Logitech" > strings/0x409/manufacturer
-echo "Logitech Driving Force GT" > strings/0x409/product
+echo "12341234" > strings/0x409/serialnumber
+echo "Logitech, Inc." > strings/0x409/manufacturer
+echo "Driving Force GT" > strings/0x409/product
 
 
 # Define the functions of the device
 mkdir functions/hid.usb0
 echo 0 > functions/hid.usb0/protocol
 echo 0 > functions/hid.usb0/subclass
-echo 8 > functions/hid.usb0/report_length
+echo 7 > functions/hid.usb0/report_length
 
-# Write report descriptor ( X and Y analog joysticks plus 8 buttons )
-echo "05010904A101150025073500463B01651409397504950181426500250145010509190129157501951581020600FF09019507810226FF3F46FF3F750E9501050109308102250145010600FF090175019502810226FF0046FF000501093109327508810295070600FF0902910295830903B102C0" | xxd -r -ps > functions/hid.usb0/report_desc
+# Logitech Driving Force GT
+# Read from the original device using mac-hid-dump
+
+echo "05010904a101a1029501750a150026ff03350046ff0309308102950c75012501450105091901290c810295020600ff090181020501093126ff0046ff009501750881022507463b0175046514093981427501950465000600ff09012501450181029502750826ff0046ff0009028102c0a10226ff0046ff009507750809039102c0c0"| xxd -r -ps > functions/hid.usb0/report_desc
 
 
 # Create configuration file

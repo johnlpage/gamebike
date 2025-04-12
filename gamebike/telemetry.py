@@ -81,9 +81,11 @@ class Telemetry(object):
                     self.parse_thecrew_telemetry(data)
         
         except BlockingIOError:
-            logging.debug(f"speed(m/s): {self.speedms:.2} gradient:{self.gradient:.2}")
+            #logging.debug(f"speed(m/s): {self.speedms:.2} gradient:{self.gradient:.2}")
+            pass
         except Exception as e:
             logging.error(f"Odd: {str(e)}")
+            pass
             
 
 if __name__ == "__main__":

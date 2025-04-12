@@ -11,6 +11,7 @@ import logging
 import time
 import bluepy.btle as btle
 
+
 DEVICENAME = "Handlebar"
 SERVICEUUID = "4a9d"
 CHARUUID = "ba75"
@@ -32,21 +33,7 @@ class NotifyDelegate(DefaultDelegate):
             if value > 0:
                 rec[valname] = (value - 5000) / scale[c]
             c = c + 1
-        logging.debug(rec)
         self.parent_handlebar.data = rec
-
-
-class ScanDelegate(DefaultDelegate):
-    def __init__(self):
-        DefaultDelegate.__init__(self)
-
-    def handleDiscovery(self, dev, isNewDev, isNewData):
-        if isNewDev:
-            # print (f"Discovered device { dev.addr } ")
-            pass
-        elif isNewData:
-            # print (f"Received new data from {dev.addr}")
-            pass
 
 
 class Handlebar(object):
@@ -57,125 +44,157 @@ class Handlebar(object):
         self.forwards = 0
         self.handlebar = None
         self.last_direction = None
+   
+        self.ready = False
+        self.faults = 0
 
     def find_handlebar(self):
-        scanner = Scanner().withDelegate(ScanDelegate())
+
+        scanner = Scanner()
         self.device = None
-        while self.device == None:
-            logging.info("Scanning for Handlebar")
-            devices = scanner.scan(3.0, passive=False)
-
-            for dev in devices:
-               
-                if dev.getValueText(255) == "4a4f484e50424152":  # JOHNPBAR
-                    logging.info(vars(dev))
-                    self.device = dev
-            time.sleep(1)
-
-        logging.info("Found steeing control (handlebar")
+        count = 5
+        logging.debug("Scanning for Handlebar")
+        while count > 0 and self.device == None:
+            count = count - 1
+            try:
+                devices = scanner.scan(2.0, passive=False)
+                for dev in devices:
+                    if dev.getValueText(255) == "4a4f484e50424152":  # JOHNPBAR
+                        self.device = dev
+                        logging.debug("Found handlebar: " + dev.addr)
+                        
+            except Exception as e:
+                logging.debug("Error scanning for handlebar: " + str(e))
+                pass
+        
         return
 
     def connect_to_handlebar(self):
+        self.ready = False
         if self.device == None:
             return
 
         self.handlebar = None
-        while self.handlebar == None:
-            logging.info("Tying to connect to handlebar")
+        count = 5
+        logging.debug("Tying to connect to handlebar")
+        while count > 0 and self.handlebar == None:
+            count = count - 1
             try:
-                self.handlebar = Peripheral(self.device, btle.ADDR_TYPE_PUBLIC)
-                logging.info("Connected")
+                self.handlebar = Peripheral(self.device)
+            except Exception as e:
+                logging.debug(e)
+                time.sleep(1)
+                pass
+
+        if self.handlebar != None:
+            self.handlebar.setDelegate(NotifyDelegate(self))
+            try:
+                handlebarService = self.handlebar.getServiceByUUID(SERVICEUUID)
+                motionCharacteristics = handlebarService.getCharacteristics(
+                    forUUID=CHARUUID
+                )
+                configHandle = motionCharacteristics[0].getHandle() + 1
+                # This wasn't obvious - you need to write to enable notification
+                self.handlebar.writeCharacteristic(configHandle, b"\x01\x00")
+                logging.info("Handlebar steering connected")
+                self._calibrate()
+              
+                self.ready = True
+                return True
             except Exception as e:
                 logging.error(e)
-                time.sleep(5)
-
-        try:
-            services = self.handlebar.getServices()
-        except Exception as e:
-            logging.error(e)
-            self.handlebar = None
-            return
-            # Bluetooth LE breaks a lot :-(
-
-        self.handlebar.setDelegate(NotifyDelegate(self))
-        try:
-            handlebarService = self.handlebar.getServiceByUUID(SERVICEUUID)
-            motionCharacteristics = handlebarService.getCharacteristics(
-                forUUID=CHARUUID
-            )
-            configHandle = motionCharacteristics[0].getHandle() + 1
-            # This wasn't obvious - you need to write to enable notification
-            self.handlebar.writeCharacteristic(configHandle, b"\x01\x00")
-            logging.info("Subscribed to Gyro notifications")
-            return
-        except Exception as e:
-            logging.error("handlebar is missing required services?!")
-            logging.error(e)
-            try:
+                try:
+                    self.handlebar.disconnect()
+                except:
+                    logging.error("Was unable to disconnect!")
                 self.handlebar.disconnect()
-            except:
-                logging.error("Was unable to disconnect!")
-            self.handlebar = None
+                self.handlebar = None
+                self.ready = False
+
+       
+        return False
 
     def getDirection(self):
+
+        #Find Device
         if self.device == None:
             self.find_handlebar()
+            return
 
-        if self.device != None and self.handlebar == None:
-            self.connect_to_handlebar()
-
-        try:
-            mx = None
-            my = None
-            while self.handlebar.waitForNotifications(0.025):
-                mx = self.data.get("mx", None)
-                my = self.data.get("my", None)
-            if mx != None and my != None:
-                self.last_direction = math.atan2(mx, my) * 57.29
-
-        except Exception as e:
-            logging.error(e)
-            self.handlebar = None
+        #Connect Device
+        if self.handlebar == None:
+           self.connect_to_handlebar()
+           return
+        
+        #Ready means device connected and OK
+        if self.ready:
+            try:
+                mx = None
+                my = None
+                while self.handlebar != None and self.handlebar.waitForNotifications(0.025):
+                    mx = self.data.get("mx", None)
+                    my = self.data.get("my", None)
+                if mx != None and my != None:
+                    self.last_direction = math.atan2(mx, my) * 57.29
+            except Exception as e:
+                logging.info(e)
+                self.handlebar = None
+                self.ready = False
+               
+                    
 
         return self.last_direction
 
-    def calibrate(self):
-        dir = self.getDirection()
+        
+
+    def _calibrate(self):
         logging.info("Calibrating Handlebars")
-        tries = 20
+        tries = 6
         count = 0
         sum = 0
         while count < tries:
-            dir = self.getDirection()
-            if dir != None:
-                sum = sum + dir
-                time.sleep(0.2)
-                count += 1
+            mx = None
+            my = None
+            try:
+                while self.handlebar.waitForNotifications(0.025):
+                    mx = self.data.get("mx", None)
+                    my = self.data.get("my", None)
+                if mx != None and my != None:
+                    dir = math.atan2(mx, my) * 57.29
+                    if dir != None:
+                        sum = sum + dir
+                        count += 1
+                    time.sleep(0.25)
+            except Exception as e:
+                logging.error(f"Calibration failed {e}")
+                self.handleBar = None
+                return
+        logging.info("Handlebar Calibration complete")
         self.forwards = sum / count
-        logging.info(self.forwards)
+
 
     def getSteer(self):
         dir = self.getDirection()
-
         if dir:
             offset = dir - self.forwards
             if offset > 180:
                 offset = offset - 360
-
             # dead zone
             if -2 <= offset <= 2:
                 return 0
-            return offset
+            return -offset
         else:
             return 0
 
 
 if __name__ == "__main__":
-
+    logging.basicConfig(level=logging.DEBUG, format='%(filename)s:%(lineno)d -  %(threadName)s %(message)s')
+        
     print("Testing classs handlebar standalone")
     hbar = Handlebar()
 
     while True:
-        dir = hbar.getDirection()
-        logging.info(dir)
-        time.sleep(0.1)
+        dir = hbar.getSteer()
+        if dir:
+            logging.info(dir)
+        time.sleep(1)

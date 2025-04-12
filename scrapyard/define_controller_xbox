@@ -1,0 +1,61 @@
+# I CAN NOT GET THIS TO WORK ON A PC - DRIVER DOESN'T WORK
+
+# Created by https://github.com/milador/RaspberryPi-Joystick
+#!/bin/bash
+
+#sleep 30
+
+# Create XAC Gamepad gadget
+cd /sys/kernel/config/usb_gadget/
+mkdir -p xac_gamepad
+cd xac_gamepad
+
+# Define USB specification
+echo 0x11C0 > idVendor # ACRUX
+echo 5503  > idProduct # Multifunction Composite Joystick Gadget
+
+echo 0x0114 > bcdDevice # v1.0.0
+echo 0x0200 > bcdUSB # USB2
+
+echo 0xEF > bDeviceClass
+echo 0x02 > bDeviceSubClass
+echo 0x01 > bDeviceProtocol
+
+
+
+# Perform localization
+mkdir -p strings/0x409
+
+echo "DEADCAFE" > strings/0x409/serialnumber
+echo "Raspberry Pi" > strings/0x409/manufacturer
+echo "VGame Controller" > strings/0x409/product
+
+
+# Define the functions of the device
+mkdir functions/hid.usb0
+
+
+echo 0x5d > functions/hid.usb0/subclass
+echo 0x01 > functions/hid.usb0/protocol
+echo 17  > functions/hid.usb0/report_length
+
+echo "05010905A101A10009300931150027FFFF0000950275108102C0A10009330934150027FFFF0000950275108102C005010932150026FF039501750A81021500250075069501810305010935150026FF039501750A81021500250075069501810305091901290A950A750181021500250075069501810305010939150125083500463B0166140075049501814275049501150025003500450065008103A102050F0997150025017504950191021500250091030970150025647508950491020950660110550E26FF009501910209A7910265005500097C9102C005010980A10009851500250195017501810215002500750795018103C005060920150026FF00750895018102C0" | xxd -r -ps > functions/hid.usb0/report_desc
+   
+# Write report descriptor ( X and Y analog joysticks plus 8 buttons for XAC)
+#echo "05010904A1011581257F0901A10009300931750895028102C005091901290815002501750195088102C0" | xxd -r -ps > functions/hid.usb0/report_desc
+
+# Create configuration file
+mkdir configs/c.1
+mkdir configs/c.1/strings/0x409
+
+echo 0x80 > configs/c.1/bmAttributes
+echo 200 > configs/c.1/MaxPower # 200 mA
+echo "RaspberryPi Joystick configuration" > configs/c.1/strings/0x409/configuration
+
+# Link the configuration file
+ln -s functions/hid.usb0 configs/c.1
+
+# Activate device 
+ls /sys/class/udc > UDC
+
+sleep 10

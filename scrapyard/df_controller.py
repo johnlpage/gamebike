@@ -7,7 +7,7 @@
 # Keeing this independant of the underlying game were possible
 # Might need to use a combination of cmb and device setup if I want ot use the PS3 again
 
-import scrapyard.controlmapbits as cmb
+import controlmapbits_gt as cmb
 from pprint import pprint
 import logging
 import time
@@ -20,7 +20,7 @@ class VirtualWheel(object):
     def __init__(self):
         logging.basicConfig(level=logging.INFO)
         self.emulated_controller_fd = None
-        self.wheel_data = bytearray(7)
+        self.wheel_data = bytearray(cmb.WHEEL_NEUTRAL)
 
     def setup_wheel(self):
         try:
@@ -44,13 +44,19 @@ and is this running with permissions to write to it?"""
     # Only emulating inputs as Required - Initially probably
     # Steering, Accelerator , gears (fwd/reverse) and maybe handbrake
 
-    #Angle is percent min to max -100to 100
     def steering(self, angle):
-        MID_STEER = 512
-        wheel_value = ( angle * MID_STEER / 100) + MID_STEER
-        #Wheel is first two bytes bottom 10 bits
-        self.wheel_data[1] = int(wheel_value / 256)
-        self.wheel_data[0] = wheel_value % 256
+
+        tmp = 128 - (angle*STEERING_SENSITIVITY)
+        #Limits
+        if tmp > 250:
+            tmp=250
+        if tmp < 10: 
+            tmp=10
+
+        wheel_value = int(tmp * (cmb.STEER_MAX / 256))
+        #logging.debug(wheel_value)
+        self.wheel_data[cmb.WHEEL_WHEEL_HIGHBYTE] = int(wheel_value / 256)
+        self.wheel_data[cmb.WHEEL_WHEEL_LOWBYTE] = wheel_value % 256
 
     #All calibration of how hard to press is a level up this time
     def accelerator(self, pressure):
@@ -169,13 +175,13 @@ if __name__ == "__main__":
     vwheel.setup_wheel()
     #vwheel.configure_steam()
     
-    #vwheel.accelerator(160)
+    vwheel.accelerator(160)
     while True:
-        for x in range(-100,100):
+        for x in range(-30,30):
             vwheel.steering(x)
             vwheel.send()
             time.sleep(0.02)
-        for x in range(100,-100,-1):
+        for x in range(30,-30,-1):
             vwheel.steering(x)
             vwheel.send()
             time.sleep(0.02)
